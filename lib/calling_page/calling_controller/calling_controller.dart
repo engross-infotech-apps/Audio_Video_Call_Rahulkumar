@@ -1,5 +1,8 @@
 import 'package:agora_rtc_engine/agora_rtc_engine.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_callkit_incoming/entities/android_params.dart';
+import 'package:flutter_callkit_incoming/entities/call_kit_params.dart';
+import 'package:flutter_callkit_incoming/flutter_callkit_incoming.dart';
 import 'package:get/get.dart';
 import 'package:permission_handler/permission_handler.dart';
 
@@ -8,13 +11,13 @@ class CallingController extends GetxController {
 
   // Fill in the temporary token generated from Agora Console
   static const token =
-      "007eJxTYJi5PK+u9e7hWIXAD3o1908++fz/vOfJRrvluzL+CPxoUE9RYDBPTTJJMzZLNrCwTDRJMU5MNDUzNjU1TbUAClqaGCSv51uX3hDIyDA1J4aRkQECQXwRhuSMxLy81Jz49PzszJTS+KLEjNIcBgYAqwoorg==";
+      "007eJxTYNgXZnj19auHWxQYzDSYpXc8eBLRNuNB2KTSmT5n+lm2nriqwGCemmSSZmyWbGBhmWiSYpyYaGpmbGpqmmoBFLQ0MUiewrY1vSGQkUGmbD0TIwMEgvgiDMkZiXl5qTnx6fnZmSml8UWJGaU5DAwA5pUmrQ==";
+
   // server agora API that will token.
 
-
   // Fill in the channel name you used to generate the token
-  final channel = "channel_gokidu_rahul"; //---> from firebase -> doc/collection Id chat
-
+  final channel =
+      "channel_gokidu_rahul"; //---> from firebase -> doc/collection Id chat
 
   @override
   void onInit() {
@@ -26,8 +29,28 @@ class CallingController extends GetxController {
 
   var remoteUid = Rxn<int>(0);
   var localUserJoined = false.obs;
-
+  var isVideoCall = false.obs;
+  var isCameraEnable = true.obs;
+  var isMicEnable = true.obs;
+  var remoteVideoState =
+      Rxn<RemoteVideoState>(RemoteVideoState.remoteVideoStateStopped);
+  var cameraDirection = CameraDirection.cameraFront.obs;
   RtcEngine? engine;
+
+  updateMic() async {
+    await engine!.enableLocalAudio(!isMicEnable.value);
+    isMicEnable.value = !isMicEnable.value;
+  }
+
+  updateCamera() async {
+    await engine!.enableLocalVideo(!isCameraEnable.value);
+    isCameraEnable.value = !isCameraEnable.value;
+  }
+
+  changeCamera() async {
+debugPrint("changeCamera--> ");
+    await engine!.switchCamera();
+  }
 
   getPermissions() async {
     await [Permission.microphone, Permission.camera].request();
@@ -36,25 +59,29 @@ class CallingController extends GetxController {
   init() async {
     // Create RtcEngine instance
     engine = await createAgoraRtcEngine();
-
+    // Enable the video module
+    await engine!.enableVideo();
+    // Enable local video preview
+    await engine!.startPreview();
     // Initialize RtcEngine and set the channel profile to communication
     await engine!.initialize(const RtcEngineContext(
       appId: appId,
       channelProfile: ChannelProfileType.channelProfileCommunication,
     ));
 
-    // Enable the video module
-    await engine!.enableVideo();
-    // Enable local video preview
-    await engine!.startPreview();
     registerEventHandlers();
   }
 
-  joinChannel() async {
+  joinVideoChannel({String? channelId}) async {
+    debugPrint("joinVideoChannel ${channelId} ");
+    isVideoCall.value = true;
+    await engine!.enableLocalVideo(true);
+    await engine!.enableLocalAudio(true);
+
     await engine!.joinChannel(
       // Join a channel using a temporary token and channel name
       token: token,
-      channelId: channel,
+      channelId: channelId ?? channel,
       options: const ChannelMediaOptions(
           // Automatically subscribe to all video streams
           autoSubscribeVideo: true,
@@ -71,11 +98,26 @@ class CallingController extends GetxController {
     );
   }
 
-  leaveChannel()async{
-    await engine!.leaveChannel(options: LeaveChannelOptions(
+  Future<void> joinAudioChannel({String? channelId}) async {
+    isVideoCall.value = false;
+    // await engine!.disableVideo();
+    // await engine!.stopPreview();
 
-    ));
-    localUserJoined.value=false;
+    await engine!.joinChannel(
+      token: token,
+      channelId: channelId ?? channel,
+      options: const ChannelMediaOptions(
+        autoSubscribeAudio: true,
+        publishMicrophoneTrack: true,
+        clientRoleType: ClientRoleType.clientRoleBroadcaster,
+      ),
+      uid: 0,
+    );
+  }
+
+  leaveChannel() async {
+    await engine!.leaveChannel(options: LeaveChannelOptions());
+    localUserJoined.value = false;
     remoteUid.value = null;
   }
 
@@ -83,29 +125,33 @@ class CallingController extends GetxController {
     // Add an event handler
     engine!.registerEventHandler(
       RtcEngineEventHandler(
-        // Occurs when the local user joins the channel successfully
-        onJoinChannelSuccess: (RtcConnection connection, int elapsed) {
-          debugPrint("local user ${connection.localUid} joined");
-          localUserJoined.value = true;
-        },
-        // Occurs when a remote user join the channel
-        onUserJoined: (RtcConnection connection, int remoteUidd, int elapsed) {
-          debugPrint("remote user $remoteUidd joined");
-          remoteUid.value = remoteUidd;
-        },
-        // Occurs when a remote user leaves the channel
-        onUserOffline: (RtcConnection connection, int remoteUidd,
-            UserOfflineReasonType reason) {
-          debugPrint("remote user $remoteUidd left channel");
-          remoteUid.value = null;
-          // localUserJoined.value=false;
-          leaveChannel();
-        },
+          // Occurs when the local user joins the channel successfully
+          onJoinChannelSuccess: (RtcConnection connection, int elapsed) {
+        debugPrint("local user ${connection.localUid} joined");
+        localUserJoined.value = true;
+      },
+          // Occurs when a remote user join the channel
+          onUserJoined:
+              (RtcConnection connection, int remoteUidd, int elapsed) {
+        debugPrint("remote user $remoteUidd joined");
+        remoteUid.value = remoteUidd;
+      },
+          // Occurs when a remote user leaves the channel
+          onUserOffline: (RtcConnection connection, int remoteUidd,
+              UserOfflineReasonType reason) {
+        debugPrint("remote user $remoteUidd left channel");
+        remoteUid.value = null;
+        // localUserJoined.value=false;
+        leaveChannel();
+      }, onRemoteVideoStateChanged: (a, b, c, d, e) {
+        debugPrint("Remote vide changed --> ${a} ${b} ${c} ${d} ${e}");
+        remoteVideoState.value = c;
 
-      ),
+        // if(c==RemoteVideoState.remoteVideoStateStarting){
+        //   updateCamera();
+        // }
+      }),
     );
-
-
   }
 
   @override
@@ -115,19 +161,17 @@ class CallingController extends GetxController {
   }
 }
 
+// FCM Push- DONE
+// Push notification host/other device - DONE
+// Handle cases- background/ foreground - DONE
+// Design Overlay screen - DONE
+// Notification sounds/ vibration - DONE
 
+// Accept call event functionality
+// Reject call event functionality
 
-// FCM Push
-// Push notification host/other device
-// Handle cases- background/ foreground
-// Background -> workmanager( handle isolate )
-// Design Overlay screen
-// Notification sounds/ vibration
+//Outgoing call
+
 // IOS
 
 // two person join -> (chat) -> firebase(str) -> Next.js
-
-
-
-
-
