@@ -1,0 +1,12 @@
+{
+    "statusCode": 200,
+    "message": "Login successful",
+    "data": {
+        "msg": "Login successful",
+        "Email": "recipient@test.com",
+        "access_token": "",
+        "IsProfileCompleted": true,
+        "UserRole": 1,
+        "UserType": 1
+    }
+}

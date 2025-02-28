@@ -1,0 +1,31 @@
+{
+    "statusCode": 200,
+    "message": "Success",
+    "data": {
+        "UserId": 76,
+        "UserType": 1,
+        "RoleId": 1,
+        "DisplayName": "EIT_AK",
+        "FullName": "Recipient",
+        "DOB": "1994-05-11T00:00:00.000Z",
+        "Email": "recipient@test.com",
+        "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1739177431085_m6ytcldg.jpg",
+        "Address": "Infinite Loop 6, 6 Mariani Ave, Cupertino, CA 95014, USA",
+        "City": "Cupertino",
+        "State": "CA",
+        "Country": "United States",
+        "ZipCode": "95014",
+        "CountryId": 1,
+        "Currency": "USD",
+        "IsVerified": false,
+        "IsEnableNotificationsAlerts": true,
+        "IsEnableEmailsAlerts": true,
+        "IsUploadDocumentStatus": true,
+        "IsEmailUser": true,
+        "StripeConnectAccountId": null,
+        "DocumentFrontImage": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/documents/image_cropper_1728898033681_m28t9404.jpg",
+        "DocumentBackImage": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/temp/image_cropper_1728898033681_m28t9404.jpg",
+        "CurrencySymbol": "$",
+        "IsAddedBankAccount": false
+    }
+}

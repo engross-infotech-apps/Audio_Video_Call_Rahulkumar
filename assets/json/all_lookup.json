@@ -1,0 +1,2650 @@
+{
+  "statusCode": 200,
+  "message": "Success",
+  "data": {
+    "AppSetting": [
+      {
+        "KeyName": "SpermDonorServiceFee",
+        "Value": "3"
+      },
+      {
+        "KeyName": "SpermRecipientServiceFee",
+        "Value": "7"
+      },
+      {
+        "KeyName": "RecipientServiceFee",
+        "Value": "10"
+      },
+      {
+        "KeyName": "TEST_STRIPE_SECRET_KEY",
+        "Value": "sk_test_51POZjQFIBCQx1VM1dkBe0WIiq1ygu7NyFtHtHBBxiVzR7IM0HgiHWTxt29huEc1WyY0JjDhO3uinbfztEetufoTA00cSGNBTa2"
+      },
+      {
+        "KeyName": "TEST_STRIPE_PUBLISHABLE_KEY",
+        "Value": "pk_test_51POZjQFIBCQx1VM164df0sIvyW0tC17SYuDQuD2KhRRAGezMiVrSCf3lUWY73IwUwt1rqpLp0xKYurOPg0BFTpqo00Tx1keNWI"
+      },
+      {
+        "KeyName": "LIVE_STRIPE_SECRET_KEY",
+        "Value": "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"
+      },
+      {
+        "KeyName": "LIVE_STRIPE_PUBLISHABLE_KEY",
+        "Value": "pk_live_51PNXho2KMhEh2srn4DbTT4XyfczXYZ8kgQNqTGSDYeIcF7KUCRoMiowcACqlleZHnsPQjcEPneFsB0eeh1RKXZHh00N"
+      },
+      {
+        "KeyName": "StripeMode",
+        "Value": "test"
+      },
+      {
+        "KeyName": "StripeTestEmails",
+        "Value": "test@engrossinfotech.com,pratik.patel@engrossinfotech.com"
+      },
+      {
+        "KeyName": "IsFeedBackShow",
+        "Value": "Yes"
+      },
+      {
+        "KeyName": "StripeFeePercentage",
+        "Value": "2.9"
+      },
+      {
+        "KeyName": "StripeFixedFee",
+        "Value": "0.30"
+      },
+      {
+        "KeyName": "CurrencyExchangeFeePercentage",
+        "Value": "1"
+      }
+    ],
+    "DocumentType": [
+      {
+        "DocumentTypeId": 1,
+        "DocumentName": "Passport"
+      },
+      {
+        "DocumentTypeId": 2,
+        "DocumentName": "Driver's License"
+      },
+      {
+        "DocumentTypeId": 3,
+        "DocumentName": "National ID"
+      },
+      {
+        "DocumentTypeId": 4,
+        "DocumentName": "Other"
+      }
+    ],
+    "Education": [
+      {
+        "EducationId": 1,
+        "Name": "High School Diploma"
+      },
+      {
+        "EducationId": 2,
+        "Name": "Associate's Degree"
+      },
+      {
+        "EducationId": 3,
+        "Name": "Bachelor's Degree"
+      },
+      {
+        "EducationId": 4,
+        "Name": "Master's Degree"
+      },
+      {
+        "EducationId": 5,
+        "Name": "Doctorate Degree"
+      },
+      {
+        "EducationId": 6,
+        "Name": "Vocational/Technical School"
+      },
+      {
+        "EducationId": 7,
+        "Name": "Certificate Program"
+      },
+      {
+        "EducationId": 8,
+        "Name": "Professional Qualification"
+      }
+    ],
+    "EyeColor": [
+      {
+        "EyeColorId": 1,
+        "Color": "Amber",
+        "Image": "https://gokidu.s3.ca-central-1.amazonaws.com/eye/green.png"
+      },
+      {
+        "EyeColorId": 2,
+        "Color": "Hazel",
+        "Image": "https://gokidu.s3.ca-central-1.amazonaws.com/eye/hazel.png"
+      },
+      {
+        "EyeColorId": 3,
+        "Color": "Gray",
+        "Image": "https://gokidu.s3.ca-central-1.amazonaws.com/eye/gray.png"
+      },
+      {
+        "EyeColorId": 4,
+        "Color": "Black",
+        "Image": "https://gokidu.s3.ca-central-1.amazonaws.com/eye/brown.png"
+      },
+      {
+        "EyeColorId": 5,
+        "Color": "Green",
+        "Image": "https://gokidu.s3.ca-central-1.amazonaws.com/eye/green.png"
+      },
+      {
+        "EyeColorId": 6,
+        "Color": "Blue",
+        "Image": "https://gokidu.s3.ca-central-1.amazonaws.com/eye/blue.png"
+      }
+    ],
+    "HairColor": [
+      {
+        "HairColorId": 1,
+        "Color": "Auburn",
+        "Image": "https://gokidu.s3.ca-central-1.amazonaws.com/hair-color/1711106811422_wztlqoq1q6e.png"
+      },
+      {
+        "HairColorId": 2,
+        "Color": "Black",
+        "Image": "https://gokidu.s3.ca-central-1.amazonaws.com/hair-color/black.png"
+      },
+      {
+        "HairColorId": 3,
+        "Color": "Blonde",
+        "Image": "https://gokidu.s3.ca-central-1.amazonaws.com/hair-color/blonde.png"
+      },
+      {
+        "HairColorId": 4,
+        "Color": "Brown",
+        "Image": "https://gokidu.s3.ca-central-1.amazonaws.com/hair-color/brown.png"
+      },
+      {
+        "HairColorId": 5,
+        "Color": "Red",
+        "Image": "https://gokidu.s3.ca-central-1.amazonaws.com/hair-color/red.png"
+      }
+    ],
+    "Height": [
+      {
+        "HeightId": 1,
+        "HeightRange": "5'7 and below (170 cm)",
+        "Description": " "
+      },
+      {
+        "HeightId": 2,
+        "HeightRange": "5'8-5'11 (173-180 cm)",
+        "Description": " "
+      },
+      {
+        "HeightId": 3,
+        "HeightRange": "6'0-6'2 (183-188 cm)",
+        "Description": " "
+      },
+      {
+        "HeightId": 4,
+        "HeightRange": "Over 6'3 (190 cm and above)",
+        "Description": " "
+      }
+    ],
+    "AgeGroup": [
+      {
+        "AgeGroupId": 1,
+        "Title": "Young adult (18-29 years)",
+        "From": 18,
+        "To": 29
+      },
+      {
+        "AgeGroupId": 2,
+        "Title": "Early adult (30-35 years)",
+        "From": 30,
+        "To": 35
+      },
+      {
+        "AgeGroupId": 3,
+        "Title": "Mid-adult (36-40 years)",
+        "From": 36,
+        "To": 40
+      }
+    ],
+    "Profession": [
+      {
+        "ProfessionId": 1,
+        "Name": "Accountant"
+      },
+      {
+        "ProfessionId": 2,
+        "Name": "Acupuncturist"
+      },
+      {
+        "ProfessionId": 3,
+        "Name": "Actor/Actress"
+      },
+      {
+        "ProfessionId": 4,
+        "Name": "Advertising Executive"
+      },
+      {
+        "ProfessionId": 5,
+        "Name": "Air Traffic Controller"
+      },
+      {
+        "ProfessionId": 6,
+        "Name": "Architect"
+      },
+      {
+        "ProfessionId": 7,
+        "Name": "Archaeologist"
+      },
+      {
+        "ProfessionId": 8,
+        "Name": "Artist"
+      },
+      {
+        "ProfessionId": 9,
+        "Name": "Astronomer"
+      },
+      {
+        "ProfessionId": 10,
+        "Name": "Attorney/Lawyer"
+      },
+      {
+        "ProfessionId": 11,
+        "Name": "Baker"
+      },
+      {
+        "ProfessionId": 12,
+        "Name": "Barber/Hairdresser"
+      },
+      {
+        "ProfessionId": 13,
+        "Name": "Biologist"
+      },
+      {
+        "ProfessionId": 14,
+        "Name": "Carpenter"
+      },
+      {
+        "ProfessionId": 15,
+        "Name": "Chef"
+      },
+      {
+        "ProfessionId": 16,
+        "Name": "Chemist"
+      },
+      {
+        "ProfessionId": 17,
+        "Name": "Chiropractor"
+      },
+      {
+        "ProfessionId": 18,
+        "Name": "Civil Engineer"
+      },
+      {
+        "ProfessionId": 19,
+        "Name": "Civil Servant"
+      },
+      {
+        "ProfessionId": 20,
+        "Name": "Clergy"
+      },
+      {
+        "ProfessionId": 21,
+        "Name": "Consultant"
+      },
+      {
+        "ProfessionId": 22,
+        "Name": "Cosmetologist"
+      },
+      {
+        "ProfessionId": 23,
+        "Name": "Counsellor/Therapist"
+      },
+      {
+        "ProfessionId": 24,
+        "Name": "DJ/Producer"
+      },
+      {
+        "ProfessionId": 25,
+        "Name": "Dentist"
+      },
+      {
+        "ProfessionId": 26,
+        "Name": "Doctor/Physician"
+      },
+      {
+        "ProfessionId": 27,
+        "Name": "Economist"
+      },
+      {
+        "ProfessionId": 28,
+        "Name": "Electrician"
+      },
+      {
+        "ProfessionId": 29,
+        "Name": "Engineer"
+      },
+      {
+        "ProfessionId": 30,
+        "Name": "Event Planner"
+      },
+      {
+        "ProfessionId": 31,
+        "Name": "Fashion Designer"
+      },
+      {
+        "ProfessionId": 32,
+        "Name": "Farmer"
+      },
+      {
+        "ProfessionId": 33,
+        "Name": "Financial Advisor"
+      },
+      {
+        "ProfessionId": 34,
+        "Name": "Firefighter"
+      },
+      {
+        "ProfessionId": 35,
+        "Name": "Fitness Instructor/Personal Trainer"
+      },
+      {
+        "ProfessionId": 36,
+        "Name": "Florist"
+      },
+      {
+        "ProfessionId": 37,
+        "Name": "Geologist"
+      },
+      {
+        "ProfessionId": 38,
+        "Name": "Graphic Designer"
+      },
+      {
+        "ProfessionId": 39,
+        "Name": "Human Resources Manager"
+      },
+      {
+        "ProfessionId": 40,
+        "Name": "Interior Designer"
+      },
+      {
+        "ProfessionId": 41,
+        "Name": "IT Specialist"
+      },
+      {
+        "ProfessionId": 42,
+        "Name": "Journalist"
+      },
+      {
+        "ProfessionId": 43,
+        "Name": "Librarian"
+      },
+      {
+        "ProfessionId": 44,
+        "Name": "Life Coach"
+      },
+      {
+        "ProfessionId": 45,
+        "Name": "Marketing Manager"
+      },
+      {
+        "ProfessionId": 46,
+        "Name": "Massage Therapist"
+      },
+      {
+        "ProfessionId": 47,
+        "Name": "Medical Doctor (MD)"
+      },
+      {
+        "ProfessionId": 48,
+        "Name": "Meteorologist"
+      },
+      {
+        "ProfessionId": 49,
+        "Name": "Midwife"
+      },
+      {
+        "ProfessionId": 50,
+        "Name": "Musician"
+      },
+      {
+        "ProfessionId": 51,
+        "Name": "Nurse"
+      },
+      {
+        "ProfessionId": 52,
+        "Name": "Occupational Therapist"
+      },
+      {
+        "ProfessionId": 53,
+        "Name": "Optometrist"
+      },
+      {
+        "ProfessionId": 54,
+        "Name": "Paralegal"
+      },
+      {
+        "ProfessionId": 55,
+        "Name": "Paramedic"
+      },
+      {
+        "ProfessionId": 56,
+        "Name": "Pharmacist"
+      },
+      {
+        "ProfessionId": 57,
+        "Name": "Photographer"
+      },
+      {
+        "ProfessionId": 58,
+        "Name": "Physical Therapist"
+      },
+      {
+        "ProfessionId": 59,
+        "Name": "Pilot"
+      },
+      {
+        "ProfessionId": 60,
+        "Name": "Plumber"
+      },
+      {
+        "ProfessionId": 61,
+        "Name": "Police Officer"
+      },
+      {
+        "ProfessionId": 62,
+        "Name": "Professor/Teacher"
+      },
+      {
+        "ProfessionId": 63,
+        "Name": "Project Manager"
+      },
+      {
+        "ProfessionId": 64,
+        "Name": "Psychiatrist"
+      },
+      {
+        "ProfessionId": 65,
+        "Name": "Psychologist"
+      },
+      {
+        "ProfessionId": 66,
+        "Name": "Public Relations Specialist"
+      },
+      {
+        "ProfessionId": 67,
+        "Name": "Radiologist"
+      },
+      {
+        "ProfessionId": 68,
+        "Name": "Real Estate Agent"
+      },
+      {
+        "ProfessionId": 69,
+        "Name": "Receptionist"
+      },
+      {
+        "ProfessionId": 70,
+        "Name": "Research Scientist"
+      },
+      {
+        "ProfessionId": 71,
+        "Name": "Sales Representative"
+      },
+      {
+        "ProfessionId": 72,
+        "Name": "Social Worker"
+      },
+      {
+        "ProfessionId": 73,
+        "Name": "Software Developer/Engineer"
+      },
+      {
+        "ProfessionId": 74,
+        "Name": "Surgeon"
+      },
+      {
+        "ProfessionId": 75,
+        "Name": "Taxi Driver"
+      },
+      {
+        "ProfessionId": 76,
+        "Name": "Veterinarian"
+      },
+      {
+        "ProfessionId": 77,
+        "Name": "Waiter/Waitress"
+      },
+      {
+        "ProfessionId": 78,
+        "Name": "Writer/Author"
+      }
+    ],
+    "Role": [
+      {
+        "RoleId": 1,
+        "Name": "Recipient"
+      },
+      {
+        "RoleId": 2,
+        "Name": "Donor"
+      },
+      {
+        "RoleId": 3,
+        "Name": "Admin"
+      }
+    ],
+    "UserType": [
+      {
+        "UserTypeId": 1,
+        "Name": "Sperm"
+      },
+      {
+        "UserTypeId": 2,
+        "Name": "Egg"
+      },
+      {
+        "UserTypeId": 3,
+        "Name": "Embryo"
+      },
+      {
+        "UserTypeId": 4,
+        "Name": "Surrogate"
+      }
+    ],
+    "Ethnicity": [
+      {
+        "EthnicityId": 1,
+        "Name": "South Asian"
+      },
+      {
+        "EthnicityId": 2,
+        "Name": "East Asian"
+      },
+      {
+        "EthnicityId": 4,
+        "Name": "Latino/Hispanic"
+      },
+      {
+        "EthnicityId": 5,
+        "Name": "Native American"
+      },
+      {
+        "EthnicityId": 6,
+        "Name": "Middle Eastern"
+      },
+      {
+        "EthnicityId": 7,
+        "Name": "Pacific Islander"
+      },
+      {
+        "EthnicityId": 8,
+        "Name": "Mixed Race"
+      }
+    ],
+    "Religious": [
+      {
+        "ReligiousId": 1,
+        "Name": "Christianity"
+      },
+      {
+        "ReligiousId": 2,
+        "Name": "Islam"
+      },
+      {
+        "ReligiousId": 3,
+        "Name": "Hinduism"
+      },
+      {
+        "ReligiousId": 4,
+        "Name": "Buddhism"
+      },
+      {
+        "ReligiousId": 5,
+        "Name": "Judaism"
+      },
+      {
+        "ReligiousId": 6,
+        "Name": "Sikhism"
+      }
+    ],
+    "BloodGroup": [
+      {
+        "BloodGroupId": 1,
+        "GroupName": "A+"
+      },
+      {
+        "BloodGroupId": 2,
+        "GroupName": "A-"
+      },
+      {
+        "BloodGroupId": 3,
+        "GroupName": "B+"
+      },
+      {
+        "BloodGroupId": 4,
+        "GroupName": "B-"
+      },
+      {
+        "BloodGroupId": 5,
+        "GroupName": "AB+"
+      },
+      {
+        "BloodGroupId": 6,
+        "GroupName": "AB-"
+      },
+      {
+        "BloodGroupId": 7,
+        "GroupName": "O+"
+      },
+      {
+        "BloodGroupId": 8,
+        "GroupName": "O-"
+      }
+    ],
+    "Country": [
+      {
+        "CountryId": 1,
+        "Name": "United States",
+        "CountryCode": "US",
+        "Emoji": " \\ud83c\\uddfa\\ud83c\\uddf8",
+        "Nationality": "American",
+        "Currency": "USD",
+        "DialCode": "+1"
+      },
+      {
+        "CountryId": 2,
+        "Name": "Canada",
+        "CountryCode": "CA",
+        "Emoji": "\\ud83c\\udde8\\ud83c\\udde6",
+        "Nationality": "Canadian",
+        "Currency": "CAD",
+        "DialCode": "+1"
+      },
+      {
+        "CountryId": 3,
+        "Name": "United Kingdom",
+        "CountryCode": "GB",
+        "Emoji": "\\ud83c\\uddec\\ud83c\\udde7",
+        "Nationality": "British",
+        "Currency": "GBP",
+        "DialCode": "+44"
+      },
+      {
+        "CountryId": 4,
+        "Name": "Germany",
+        "CountryCode": "DE",
+        "Emoji": "\\ud83c\\udde9\\ud83c\\uddea",
+        "Nationality": "German",
+        "Currency": "EUR",
+        "DialCode": "+49"
+      },
+      {
+        "CountryId": 5,
+        "Name": "Angola",
+        "CountryCode": "AO",
+        "Emoji": "\\ud83c\\udde6\\ud83c\\uddf4",
+        "Nationality": "Angolan",
+        "Currency": "AOA",
+        "DialCode": "+244"
+      },
+      {
+        "CountryId": 6,
+        "Name": "Antigua and Barbuda",
+        "CountryCode": "AG",
+        "Emoji": "\\ud83c\\udde6\\ud83c\\uddec",
+        "Nationality": "Antiguan, Barbudan",
+        "Currency": "XCD",
+        "DialCode": "+1-268"
+      },
+      {
+        "CountryId": 7,
+        "Name": "Argentina",
+        "CountryCode": "AR",
+        "Emoji": "\\ud83c\\udde6\\ud83c\\uddf7",
+        "Nationality": "Argentine",
+        "Currency": "ARS",
+        "DialCode": "+54"
+      },
+      {
+        "CountryId": 8,
+        "Name": "Armenia",
+        "CountryCode": "AM",
+        "Emoji": "\\ud83c\\udde6\\ud83c\\uddf2",
+        "Nationality": "Armenian",
+        "Currency": "AMD",
+        "DialCode": "+374"
+      },
+      {
+        "CountryId": 9,
+        "Name": "Australia",
+        "CountryCode": "AU",
+        "Emoji": "\\ud83c\\udde6\\ud83c\\uddfa",
+        "Nationality": "Australian",
+        "Currency": "AUD",
+        "DialCode": "+61"
+      },
+      {
+        "CountryId": 10,
+        "Name": "Austria",
+        "CountryCode": "AT",
+        "Emoji": "\\ud83c\\udde6\\ud83c\\uddf9",
+        "Nationality": "Austrian",
+        "Currency": "EUR",
+        "DialCode": "+43"
+      },
+      {
+        "CountryId": 11,
+        "Name": "Azerbaijan",
+        "CountryCode": "AZ",
+        "Emoji": "\\ud83c\\udde6\\ud83c\\uddff",
+        "Nationality": "Azerbaijani",
+        "Currency": "AZN",
+        "DialCode": "+994"
+      },
+      {
+        "CountryId": 12,
+        "Name": "Bahamas",
+        "CountryCode": "BS",
+        "Emoji": "\\ud83c\\udde7\\ud83c\\uddf8",
+        "Nationality": "Bahamian",
+        "Currency": "BSD",
+        "DialCode": "+1-242"
+      },
+      {
+        "CountryId": 13,
+        "Name": "Bahrain",
+        "CountryCode": "BH",
+        "Emoji": "\\ud83c\\udde7\\ud83c\\udded",
+        "Nationality": "Bahraini",
+        "Currency": "BHD",
+        "DialCode": "+973"
+      },
+      {
+        "CountryId": 14,
+        "Name": "Bangladesh",
+        "CountryCode": "BD",
+        "Emoji": "\\ud83c\\udde7\\ud83c\\uddf4",
+        "Nationality": "Bangladeshi",
+        "Currency": "BDT",
+        "DialCode": "+880"
+      },
+      {
+        "CountryId": 15,
+        "Name": "Barbados",
+        "CountryCode": "BB",
+        "Emoji": "\\ud83c\\udde7\\ud83c\\udde7",
+        "Nationality": "Barbadian",
+        "Currency": "BBD",
+        "DialCode": "+1-246"
+      },
+      {
+        "CountryId": 16,
+        "Name": "Belarus",
+        "CountryCode": "BY",
+        "Emoji": "\\ud83c\\udde7\\ud83c\\uddfe",
+        "Nationality": "Belarusian",
+        "Currency": "BYN",
+        "DialCode": "+375"
+      },
+      {
+        "CountryId": 17,
+        "Name": "Belgium",
+        "CountryCode": "BE",
+        "Emoji": "\\ud83c\\udde7\\ud83c\\uddea",
+        "Nationality": "Belgian",
+        "Currency": "EUR",
+        "DialCode": "+32"
+      },
+      {
+        "CountryId": 18,
+        "Name": "Belize",
+        "CountryCode": "BZ",
+        "Emoji": "\\ud83c\\udde7\\ud83c\\uddff",
+        "Nationality": "Belizean",
+        "Currency": "BZD",
+        "DialCode": "+501"
+      },
+      {
+        "CountryId": 19,
+        "Name": "Benin",
+        "CountryCode": "BJ",
+        "Emoji": "\\ud83c\\udde7\\ud83c\\uddef",
+        "Nationality": "Beninese",
+        "Currency": "XOF",
+        "DialCode": "+229"
+      },
+      {
+        "CountryId": 20,
+        "Name": "Bhutan",
+        "CountryCode": "BT",
+        "Emoji": "\\ud83c\\udde7\\ud83c\\uddf9",
+        "Nationality": "Bhutanese",
+        "Currency": "BTN",
+        "DialCode": "+975"
+      },
+      {
+        "CountryId": 21,
+        "Name": "Bolivia",
+        "CountryCode": "BO",
+        "Emoji": "\\ud83c\\udde7\\ud83c\\uddf4",
+        "Nationality": "Bolivian",
+        "Currency": "BOB",
+        "DialCode": "+591"
+      },
+      {
+        "CountryId": 22,
+        "Name": "Bosnia and Herzegovina",
+        "CountryCode": "BA",
+        "Emoji": "\\ud83c\\udde7\\ud83c\\udde6",
+        "Nationality": "Bosnian, Herzegovinian",
+        "Currency": "BAM",
+        "DialCode": "+387"
+      },
+      {
+        "CountryId": 23,
+        "Name": "Botswana",
+        "CountryCode": "BW",
+        "Emoji": "\\ud83c\\udde7\\ud83c\\uddfc",
+        "Nationality": "Botswanan",
+        "Currency": "BWP",
+        "DialCode": "+267"
+      },
+      {
+        "CountryId": 24,
+        "Name": "Brazil",
+        "CountryCode": "BR",
+        "Emoji": "\\ud83c\\udde7\\ud83c\\uddf7",
+        "Nationality": "Brazilian",
+        "Currency": "BRL",
+        "DialCode": "+55"
+      },
+      {
+        "CountryId": 25,
+        "Name": "Brunei",
+        "CountryCode": "BN",
+        "Emoji": "\\ud83c\\udde7\\ud83c\\uddf3",
+        "Nationality": "Bruneian",
+        "Currency": "BND",
+        "DialCode": "+673"
+      },
+      {
+        "CountryId": 26,
+        "Name": "Bulgaria",
+        "CountryCode": "BG",
+        "Emoji": "\\ud83c\\udde7\\ud83c\\uddec",
+        "Nationality": "Bulgarian",
+        "Currency": "BGN",
+        "DialCode": "+359"
+      },
+      {
+        "CountryId": 27,
+        "Name": "Burkina Faso",
+        "CountryCode": "BF",
+        "Emoji": "\\ud83c\\udde7\\ud83c\\uddeb",
+        "Nationality": "Burkinabé",
+        "Currency": "XOF",
+        "DialCode": "+226"
+      },
+      {
+        "CountryId": 28,
+        "Name": "Burundi",
+        "CountryCode": "BI",
+        "Emoji": "\\ud83c\\udde7\\ud83c\\uddee",
+        "Nationality": "Burundian",
+        "Currency": "BIF",
+        "DialCode": "+257"
+      },
+      {
+        "CountryId": 29,
+        "Name": "Cabo Verde",
+        "CountryCode": "CV",
+        "Emoji": "\\ud83c\\udde8\\ud83c\\uddfb",
+        "Nationality": "Cape Verdean",
+        "Currency": "CVE",
+        "DialCode": "+238"
+      },
+      {
+        "CountryId": 30,
+        "Name": "Cambodia",
+        "CountryCode": "KH",
+        "Emoji": "\\ud83c\\uddf0\\ud83c\\udded",
+        "Nationality": "Cambodian",
+        "Currency": "KHR",
+        "DialCode": "+855"
+      },
+      {
+        "CountryId": 31,
+        "Name": "Cameroon",
+        "CountryCode": "CM",
+        "Emoji": "\\ud83c\\udde8\\ud83c\\uddf2",
+        "Nationality": "Cameroonian",
+        "Currency": "XAF",
+        "DialCode": "+237"
+      },
+      {
+        "CountryId": 32,
+        "Name": "Canada",
+        "CountryCode": "CA",
+        "Emoji": "\\ud83c\\udde8\\ud83c\\udde6",
+        "Nationality": "Canadian",
+        "Currency": "CAD",
+        "DialCode": "+1"
+      },
+      {
+        "CountryId": 33,
+        "Name": "Central African Republic",
+        "CountryCode": "CF",
+        "Emoji": "\\ud83c\\udde8\\ud83c\\uddeb",
+        "Nationality": "Central African",
+        "Currency": "XAF",
+        "DialCode": "+236"
+      },
+      {
+        "CountryId": 34,
+        "Name": "Chad",
+        "CountryCode": "TD",
+        "Emoji": "\\ud83c\\uddf9\\ud83c\\udde9",
+        "Nationality": "Chadian",
+        "Currency": "XAF",
+        "DialCode": "+235"
+      },
+      {
+        "CountryId": 35,
+        "Name": "Chile",
+        "CountryCode": "CL",
+        "Emoji": "\\ud83c\\udde8\\ud83c\\uddf1",
+        "Nationality": "Chilean",
+        "Currency": "CLP",
+        "DialCode": "+56"
+      },
+      {
+        "CountryId": 36,
+        "Name": "China",
+        "CountryCode": "CN",
+        "Emoji": "\\ud83c\\udde8\\ud83c\\uddf3",
+        "Nationality": "Chinese",
+        "Currency": "CNY",
+        "DialCode": "+86"
+      },
+      {
+        "CountryId": 37,
+        "Name": "Colombia",
+        "CountryCode": "CO",
+        "Emoji": "\\ud83c\\udde8\\ud83c\\uddf4",
+        "Nationality": "Colombian",
+        "Currency": "COP",
+        "DialCode": "+57"
+      },
+      {
+        "CountryId": 38,
+        "Name": "Comoros",
+        "CountryCode": "KM",
+        "Emoji": "\\ud83c\\uddf0\\ud83c\\uddf2",
+        "Nationality": "Comoran, Comorian",
+        "Currency": "KMF",
+        "DialCode": "+269"
+      },
+      {
+        "CountryId": 39,
+        "Name": "Congo",
+        "CountryCode": "CG",
+        "Emoji": "\\ud83c\\udde8\\ud83c\\uddec",
+        "Nationality": "Congolese",
+        "Currency": "XAF",
+        "DialCode": "+242"
+      },
+      {
+        "CountryId": 40,
+        "Name": "Costa Rica",
+        "CountryCode": "CR",
+        "Emoji": "\\ud83c\\udde8\\ud83c\\uddf7",
+        "Nationality": "Costa Rican",
+        "Currency": "CRC",
+        "DialCode": "+506"
+      },
+      {
+        "CountryId": 41,
+        "Name": "Croatia",
+        "CountryCode": "HR",
+        "Emoji": "\\ud83c\\uddee\\ud83c\\uddf7",
+        "Nationality": "Croatian",
+        "Currency": "HRK",
+        "DialCode": "+385"
+      },
+      {
+        "CountryId": 42,
+        "Name": "Cuba",
+        "CountryCode": "CU",
+        "Emoji": "\\ud83c\\udde8\\ud83c\\uddfa",
+        "Nationality": "Cuban",
+        "Currency": "CUP",
+        "DialCode": "+53"
+      },
+      {
+        "CountryId": 43,
+        "Name": "Cyprus",
+        "CountryCode": "CY",
+        "Emoji": "\\ud83c\\udde8\\ud83c\\uddfe",
+        "Nationality": "Cypriot",
+        "Currency": "EUR",
+        "DialCode": "+357"
+      },
+      {
+        "CountryId": 44,
+        "Name": "Czechia",
+        "CountryCode": "CZ",
+        "Emoji": "\\ud83c\\udde8\\ud83c\\uddff",
+        "Nationality": "Czech",
+        "Currency": "CZK",
+        "DialCode": "+420"
+      },
+      {
+        "CountryId": 45,
+        "Name": "Denmark",
+        "CountryCode": "DK",
+        "Emoji": "\\ud83c\\udde9\\ud83c\\uddf0",
+        "Nationality": "Danish",
+        "Currency": "DKK",
+        "DialCode": "+45"
+      },
+      {
+        "CountryId": 46,
+        "Name": "Djibouti",
+        "CountryCode": "DJ",
+        "Emoji": "\\ud83c\\udde9\\ud83c\\uddef",
+        "Nationality": "Djiboutian",
+        "Currency": "DJF",
+        "DialCode": "+253"
+      },
+      {
+        "CountryId": 47,
+        "Name": "Dominica",
+        "CountryCode": "DM",
+        "Emoji": "\\ud83c\\udde9\\ud83c\\uddf2",
+        "Nationality": "Dominican",
+        "Currency": "XCD",
+        "DialCode": "+1-767"
+      },
+      {
+        "CountryId": 48,
+        "Name": "Dominican Republic",
+        "CountryCode": "DO",
+        "Emoji": "\\ud83c\\udde9\\ud83c\\uddf4",
+        "Nationality": "Dominican",
+        "Currency": "DOP",
+        "DialCode": "+1-809"
+      },
+      {
+        "CountryId": 49,
+        "Name": "Ecuador",
+        "CountryCode": "EC",
+        "Emoji": "\\ud83c\\udde8\\ud83c\\udde8",
+        "Nationality": "Ecuadorian",
+        "Currency": "USD",
+        "DialCode": "+593"
+      },
+      {
+        "CountryId": 50,
+        "Name": "Egypt",
+        "CountryCode": "EG",
+        "Emoji": "\\ud83c\\uddea\\ud83c\\uddec",
+        "Nationality": "Egyptian",
+        "Currency": "EGP",
+        "DialCode": "+20"
+      },
+      {
+        "CountryId": 51,
+        "Name": "El Salvador",
+        "CountryCode": "SV",
+        "Emoji": "\\ud83c\\uddf8\\ud83c\\uddfb",
+        "Nationality": "Salvadoran",
+        "Currency": "USD",
+        "DialCode": "+503"
+      },
+      {
+        "CountryId": 52,
+        "Name": "Equatorial Guinea",
+        "CountryCode": "GQ",
+        "Emoji": "\\ud83c\\uddec\\ud83c\\uddf6",
+        "Nationality": "Equatorial Guinean, Equatoguinean",
+        "Currency": "XAF",
+        "DialCode": "+240"
+      },
+      {
+        "CountryId": 53,
+        "Name": "Eritrea",
+        "CountryCode": "ER",
+        "Emoji": "\\ud83c\\uddea\\ud83c\\uddf7",
+        "Nationality": "Eritrean",
+        "Currency": "ERN",
+        "DialCode": "+291"
+      },
+      {
+        "CountryId": 54,
+        "Name": "Estonia",
+        "CountryCode": "EE",
+        "Emoji": "\\ud83c\\uddea\\ud83c\\uddea",
+        "Nationality": "Estonian",
+        "Currency": "EUR",
+        "DialCode": "+372"
+      },
+      {
+        "CountryId": 55,
+        "Name": "Eswatini",
+        "CountryCode": "SZ",
+        "Emoji": "\\ud83c\\uddf8\\ud83c\\uddff",
+        "Nationality": "Swazi",
+        "Currency": "SZL",
+        "DialCode": "+268"
+      },
+      {
+        "CountryId": 56,
+        "Name": "Ethiopia",
+        "CountryCode": "ET",
+        "Emoji": "\\ud83c\\uddea\\ud83c\\uddf9",
+        "Nationality": "Ethiopian",
+        "Currency": "ETB",
+        "DialCode": "+251"
+      },
+      {
+        "CountryId": 57,
+        "Name": "Fiji",
+        "CountryCode": "FJ",
+        "Emoji": "\\ud83c\\uddeb\\ud83c\\uddef",
+        "Nationality": "Fijian",
+        "Currency": "FJD",
+        "DialCode": "+679"
+      },
+      {
+        "CountryId": 58,
+        "Name": "Finland",
+        "CountryCode": "FI",
+        "Emoji": "\\ud83c\\uddeb\\ud83c\\uddee",
+        "Nationality": "Finnish",
+        "Currency": "EUR",
+        "DialCode": "+358"
+      },
+      {
+        "CountryId": 59,
+        "Name": "France",
+        "CountryCode": "FR",
+        "Emoji": "\\ud83c\\uddeb\\ud83c\\uddf7",
+        "Nationality": "French",
+        "Currency": "EUR",
+        "DialCode": "+33"
+      },
+      {
+        "CountryId": 60,
+        "Name": "Gabon",
+        "CountryCode": "GA",
+        "Emoji": "\\ud83c\\uddec\\ud83c\\udde6",
+        "Nationality": "Gabonese",
+        "Currency": "XAF",
+        "DialCode": "+241"
+      },
+      {
+        "CountryId": 61,
+        "Name": "Gambia",
+        "CountryCode": "GM",
+        "Emoji": "\\ud83c\\uddec\\ud83c\\uddf2",
+        "Nationality": "Gambian",
+        "Currency": "GMD",
+        "DialCode": "+220"
+      },
+      {
+        "CountryId": 62,
+        "Name": "Georgia",
+        "CountryCode": "GE",
+        "Emoji": "\\ud83c\\uddec\\ud83c\\uddea",
+        "Nationality": "Georgian",
+        "Currency": "GEL",
+        "DialCode": "+995"
+      },
+      {
+        "CountryId": 63,
+        "Name": "Germany",
+        "CountryCode": "DE",
+        "Emoji": "\\ud83c\\udde9\\ud83c\\uddea",
+        "Nationality": "German",
+        "Currency": "EUR",
+        "DialCode": "+49"
+      },
+      {
+        "CountryId": 64,
+        "Name": "Ghana",
+        "CountryCode": "GH",
+        "Emoji": "\\ud83c\\uddec\\ud83c\\udded",
+        "Nationality": "Ghanaian",
+        "Currency": "GHS",
+        "DialCode": "+233"
+      },
+      {
+        "CountryId": 65,
+        "Name": "Greece",
+        "CountryCode": "GR",
+        "Emoji": "\\ud83c\\uddec\\ud83c\\uddf7",
+        "Nationality": "Greek",
+        "Currency": "EUR",
+        "DialCode": "+30"
+      },
+      {
+        "CountryId": 66,
+        "Name": "Grenada",
+        "CountryCode": "GD",
+        "Emoji": "\\ud83c\\uddec\\ud83c\\udde9",
+        "Nationality": "Grenadian",
+        "Currency": "XCD",
+        "DialCode": "+1-473"
+      },
+      {
+        "CountryId": 67,
+        "Name": "Guatemala",
+        "CountryCode": "GT",
+        "Emoji": "\\ud83c\\uddec\\ud83c\\uddf9",
+        "Nationality": "Guatemalan",
+        "Currency": "GTQ",
+        "DialCode": "+502"
+      },
+      {
+        "CountryId": 68,
+        "Name": "Guinea",
+        "CountryCode": "GN",
+        "Emoji": "\\ud83c\\uddec\\ud83c\\uddf3",
+        "Nationality": "Guinean",
+        "Currency": "GNF",
+        "DialCode": "+224"
+      },
+      {
+        "CountryId": 69,
+        "Name": "Guinea-Bissau",
+        "CountryCode": "GW",
+        "Emoji": "\\ud83c\\uddec\\ud83c\\uddfc",
+        "Nationality": "Bissau-Guinean",
+        "Currency": "XOF",
+        "DialCode": "+245"
+      },
+      {
+        "CountryId": 70,
+        "Name": "Guyana",
+        "CountryCode": "GY",
+        "Emoji": "\\ud83c\\uddec\\ud83c\\uddfe",
+        "Nationality": "Guyanese",
+        "Currency": "GYD",
+        "DialCode": "+592"
+      },
+      {
+        "CountryId": 71,
+        "Name": "Haiti",
+        "CountryCode": "HT",
+        "Emoji": "\\ud83c\\uddf9\\ud83c\\uddf9",
+        "Nationality": "Haitian",
+        "Currency": "HTG",
+        "DialCode": "+509"
+      },
+      {
+        "CountryId": 72,
+        "Name": "Honduras",
+        "CountryCode": "HN",
+        "Emoji": "\\ud83c\\udded\\ud83c\\uddf3",
+        "Nationality": "Honduran",
+        "Currency": "HNL",
+        "DialCode": "+504"
+      },
+      {
+        "CountryId": 73,
+        "Name": "Hungary",
+        "CountryCode": "HU",
+        "Emoji": "\\ud83c\\udded\\ud83c\\uddfa",
+        "Nationality": "Hungarian",
+        "Currency": "HUF",
+        "DialCode": "+36"
+      },
+      {
+        "CountryId": 74,
+        "Name": "Iceland",
+        "CountryCode": "IS",
+        "Emoji": "\\ud83c\\uddee\\ud83c\\uddf8",
+        "Nationality": "Icelandic",
+        "Currency": "ISK",
+        "DialCode": "+354"
+      },
+      {
+        "CountryId": 75,
+        "Name": "India",
+        "CountryCode": "IN",
+        "Emoji": "\\ud83c\\uddee\\ud83c\\uddf3",
+        "Nationality": "Indian",
+        "Currency": "INR",
+        "DialCode": "+91"
+      },
+      {
+        "CountryId": 76,
+        "Name": "Indonesia",
+        "CountryCode": "ID",
+        "Emoji": "\\ud83c\\uddee\\ud83c\\udde9",
+        "Nationality": "Indonesian",
+        "Currency": "IDR",
+        "DialCode": "+62"
+      },
+      {
+        "CountryId": 77,
+        "Name": "Iran",
+        "CountryCode": "IR",
+        "Emoji": "\\ud83c\\uddee\\ud83c\\uddf7",
+        "Nationality": "Iranian",
+        "Currency": "IRR",
+        "DialCode": "+98"
+      },
+      {
+        "CountryId": 78,
+        "Name": "Iraq",
+        "CountryCode": "IQ",
+        "Emoji": "\\ud83c\\uddee\\ud83c\\uddf6",
+        "Nationality": "Iraqi",
+        "Currency": "IQD",
+        "DialCode": "+964"
+      },
+      {
+        "CountryId": 79,
+        "Name": "Ireland",
+        "CountryCode": "IE",
+        "Emoji": "\\ud83c\\uddee\\ud83c\\uddea",
+        "Nationality": "Irish",
+        "Currency": "EUR",
+        "DialCode": "+353"
+      },
+      {
+        "CountryId": 80,
+        "Name": "Israel",
+        "CountryCode": "IL",
+        "Emoji": "\\ud83c\\uddee\\ud83c\\uddf1",
+        "Nationality": "Israeli",
+        "Currency": "ILS",
+        "DialCode": "+972"
+      },
+      {
+        "CountryId": 81,
+        "Name": "Italy",
+        "CountryCode": "IT",
+        "Emoji": "\\ud83c\\uddee\\ud83c\\uddf9",
+        "Nationality": "Italian",
+        "Currency": "EUR",
+        "DialCode": "+39"
+      },
+      {
+        "CountryId": 82,
+        "Name": "Jamaica",
+        "CountryCode": "JM",
+        "Emoji": "\\ud83c\\uddef\\ud83c\\uddf2",
+        "Nationality": "Jamaican",
+        "Currency": "JMD",
+        "DialCode": "+1-876"
+      },
+      {
+        "CountryId": 83,
+        "Name": "Japan",
+        "CountryCode": "JP",
+        "Emoji": "\\ud83c\\uddef\\ud83c\\uddf5",
+        "Nationality": "Japanese",
+        "Currency": "JPY",
+        "DialCode": "+81"
+      },
+      {
+        "CountryId": 84,
+        "Name": "Jordan",
+        "CountryCode": "JO",
+        "Emoji": "\\ud83c\\uddef\\ud83c\\uddf4",
+        "Nationality": "Jordanian",
+        "Currency": "JOD",
+        "DialCode": "+962"
+      },
+      {
+        "CountryId": 85,
+        "Name": "Kazakhstan",
+        "CountryCode": "KZ",
+        "Emoji": "\\ud83c\\uddf0\\ud83c\\uddff",
+        "Nationality": "Kazakhstani",
+        "Currency": "KZT",
+        "DialCode": "+7"
+      },
+      {
+        "CountryId": 86,
+        "Name": "Kenya",
+        "CountryCode": "KE",
+        "Emoji": "\\ud83c\\uddf0\\ud83c\\uddea",
+        "Nationality": "Kenyan",
+        "Currency": "KES",
+        "DialCode": "+254"
+      },
+      {
+        "CountryId": 87,
+        "Name": "Kiribati",
+        "CountryCode": "KI",
+        "Emoji": "\\ud83c\\uddf0\\ud83c\\uddee",
+        "Nationality": "I-Kiribati",
+        "Currency": "AUD",
+        "DialCode": "+686"
+      },
+      {
+        "CountryId": 88,
+        "Name": "Korea, North",
+        "CountryCode": "KP",
+        "Emoji": "\\ud83c\\uddf0\\ud83c\\uddf5",
+        "Nationality": "North Korean",
+        "Currency": "KPW",
+        "DialCode": "+850"
+      },
+      {
+        "CountryId": 89,
+        "Name": "Korea, South",
+        "CountryCode": "KR",
+        "Emoji": "\\ud83c\\uddf0\\ud83c\\uddf7",
+        "Nationality": "South Korean",
+        "Currency": "KRW",
+        "DialCode": "+82"
+      },
+      {
+        "CountryId": 90,
+        "Name": "Kosovo",
+        "CountryCode": "XK",
+        "Emoji": "\\ud83c\\uddf0\\ud83c\\uddf0",
+        "Nationality": "Kosovar",
+        "Currency": "EUR",
+        "DialCode": "+383"
+      },
+      {
+        "CountryId": 91,
+        "Name": "Kuwait",
+        "CountryCode": "KW",
+        "Emoji": "\\ud83c\\uddf0\\ud83c\\uddfc",
+        "Nationality": "Kuwaiti",
+        "Currency": "KWD",
+        "DialCode": "+965"
+      },
+      {
+        "CountryId": 92,
+        "Name": "Kyrgyzstan",
+        "CountryCode": "KG",
+        "Emoji": "\\ud83c\\uddf0\\ud83c\\uddec",
+        "Nationality": "Kyrgyzstani",
+        "Currency": "KGS",
+        "DialCode": "+996"
+      },
+      {
+        "CountryId": 93,
+        "Name": "Laos",
+        "CountryCode": "LA",
+        "Emoji": "\\ud83c\\uddf1\\ud83c\\udde6",
+        "Nationality": "Laotian",
+        "Currency": "LAK",
+        "DialCode": "+856"
+      },
+      {
+        "CountryId": 94,
+        "Name": "Latvia",
+        "CountryCode": "LV",
+        "Emoji": "\\ud83c\\uddf1\\ud83c\\uddfb",
+        "Nationality": "Latvian",
+        "Currency": "EUR",
+        "DialCode": "+371"
+      },
+      {
+        "CountryId": 95,
+        "Name": "Lebanon",
+        "CountryCode": "LB",
+        "Emoji": "\\ud83c\\uddf1\\ud83c\\udde7",
+        "Nationality": "Lebanese",
+        "Currency": "LBP",
+        "DialCode": "+961"
+      },
+      {
+        "CountryId": 96,
+        "Name": "Lesotho",
+        "CountryCode": "LS",
+        "Emoji": "\\ud83c\\uddf1\\ud83c\\uddf8",
+        "Nationality": "Basotho",
+        "Currency": "LSL",
+        "DialCode": "+266"
+      },
+      {
+        "CountryId": 97,
+        "Name": "Liberia",
+        "CountryCode": "LR",
+        "Emoji": "\\ud83c\\uddf1\\ud83c\\uddf7",
+        "Nationality": "Liberian",
+        "Currency": "LRD",
+        "DialCode": "+231"
+      },
+      {
+        "CountryId": 98,
+        "Name": "Libya",
+        "CountryCode": "LY",
+        "Emoji": "\\ud83c\\uddf1\\ud83c\\uddfe",
+        "Nationality": "Libyan",
+        "Currency": "LYD",
+        "DialCode": "+218"
+      },
+      {
+        "CountryId": 99,
+        "Name": "Liechtenstein",
+        "CountryCode": "LI",
+        "Emoji": "\\ud83c\\uddf1\\ud83c\\uddee",
+        "Nationality": "Liechtensteiner",
+        "Currency": "CHF",
+        "DialCode": "+423"
+      },
+      {
+        "CountryId": 100,
+        "Name": "Lithuania",
+        "CountryCode": "LT",
+        "Emoji": "\\ud83c\\uddf1\\ud83c\\uddf9",
+        "Nationality": "Lithuanian",
+        "Currency": "EUR",
+        "DialCode": "+370"
+      },
+      {
+        "CountryId": 101,
+        "Name": "Luxembourg",
+        "CountryCode": "LU",
+        "Emoji": "\\ud83c\\uddf1\\ud83c\\uddfa",
+        "Nationality": "Luxembourgish",
+        "Currency": "EUR",
+        "DialCode": "+352"
+      },
+      {
+        "CountryId": 102,
+        "Name": "Madagascar",
+        "CountryCode": "MG",
+        "Emoji": "\\ud83c\\uddf2\\ud83c\\uddec",
+        "Nationality": "Malagasy",
+        "Currency": "MGA",
+        "DialCode": "+261"
+      },
+      {
+        "CountryId": 103,
+        "Name": "Malawi",
+        "CountryCode": "MW",
+        "Emoji": "\\ud83c\\uddf2\\ud83c\\uddfc",
+        "Nationality": "Malawian",
+        "Currency": "MWK",
+        "DialCode": "+265"
+      },
+      {
+        "CountryId": 104,
+        "Name": "Malaysia",
+        "CountryCode": "MY",
+        "Emoji": "\\ud83c\\uddf2\\ud83c\\uddfe",
+        "Nationality": "Malaysian",
+        "Currency": "MYR",
+        "DialCode": "+60"
+      },
+      {
+        "CountryId": 105,
+        "Name": "Maldives",
+        "CountryCode": "MV",
+        "Emoji": "\\ud83c\\uddf2\\ud83c\\uddfb",
+        "Nationality": "Maldivian",
+        "Currency": "MVR",
+        "DialCode": "+960"
+      },
+      {
+        "CountryId": 106,
+        "Name": "Mali",
+        "CountryCode": "ML",
+        "Emoji": "\\ud83c\\uddf2\\ud83c\\uddf1",
+        "Nationality": "Malian",
+        "Currency": "XOF",
+        "DialCode": "+223"
+      },
+      {
+        "CountryId": 107,
+        "Name": "Malta",
+        "CountryCode": "MT",
+        "Emoji": "\\ud83c\\uddf2\\ud83c\\uddf9",
+        "Nationality": "Maltese",
+        "Currency": "EUR",
+        "DialCode": "+356"
+      },
+      {
+        "CountryId": 108,
+        "Name": "Marshall Islands",
+        "CountryCode": "MH",
+        "Emoji": "\\ud83c\\uddf2\\ud83c\\udded",
+        "Nationality": "Marshallese",
+        "Currency": "USD",
+        "DialCode": "+692"
+      },
+      {
+        "CountryId": 109,
+        "Name": "Mauritania",
+        "CountryCode": "MR",
+        "Emoji": "\\ud83c\\uddf2\\ud83c\\uddf7",
+        "Nationality": "Mauritanian",
+        "Currency": "MRO",
+        "DialCode": "+222"
+      },
+      {
+        "CountryId": 110,
+        "Name": "Mauritius",
+        "CountryCode": "MU",
+        "Emoji": "\\ud83c\\uddf2\\ud83c\\uddfa",
+        "Nationality": "Mauritian",
+        "Currency": "MUR",
+        "DialCode": "+230"
+      },
+      {
+        "CountryId": 111,
+        "Name": "Mexico",
+        "CountryCode": "MX",
+        "Emoji": "\\ud83c\\uddf2\\ud83c\\uddfd",
+        "Nationality": "Mexican",
+        "Currency": "MXN",
+        "DialCode": "+52"
+      },
+      {
+        "CountryId": 112,
+        "Name": "Micronesia",
+        "CountryCode": "FM",
+        "Emoji": "\\ud83c\\uddeb\\ud83c\\uddf2",
+        "Nationality": "Micronesian",
+        "Currency": "USD",
+        "DialCode": "+691"
+      },
+      {
+        "CountryId": 113,
+        "Name": "Moldova",
+        "CountryCode": "MD",
+        "Emoji": "\\ud83c\\uddf2\\ud83c\\udde9",
+        "Nationality": "Moldovan",
+        "Currency": "MDL",
+        "DialCode": "+373"
+      },
+      {
+        "CountryId": 114,
+        "Name": "Monaco",
+        "CountryCode": "MC",
+        "Emoji": "\\ud83c\\uddf2\\ud83c\\udde8",
+        "Nationality": "Monegasque, Monacan",
+        "Currency": "EUR",
+        "DialCode": "+377"
+      },
+      {
+        "CountryId": 115,
+        "Name": "Mongolia",
+        "CountryCode": "MN",
+        "Emoji": "\\ud83c\\uddf2\\ud83c\\uddf3",
+        "Nationality": "Mongolian",
+        "Currency": "MNT",
+        "DialCode": "+976"
+      },
+      {
+        "CountryId": 116,
+        "Name": "Montenegro",
+        "CountryCode": "ME",
+        "Emoji": "\\ud83c\\uddf2\\ud83c\\uddea",
+        "Nationality": "Montenegrin",
+        "Currency": "EUR",
+        "DialCode": "+382"
+      },
+      {
+        "CountryId": 117,
+        "Name": "Morocco",
+        "CountryCode": "MA",
+        "Emoji": "\\ud83c\\uddf2\\ud83c\\udde6",
+        "Nationality": "Moroccan",
+        "Currency": "MAD",
+        "DialCode": "+212"
+      },
+      {
+        "CountryId": 118,
+        "Name": "Mozambique",
+        "CountryCode": "MZ",
+        "Emoji": "\\ud83c\\uddf2\\ud83c\\uddff",
+        "Nationality": "Mozambican",
+        "Currency": "MZN",
+        "DialCode": "+258"
+      },
+      {
+        "CountryId": 119,
+        "Name": "Myanmar",
+        "CountryCode": "MM",
+        "Emoji": "\\ud83c\\uddf2\\ud83c\\uddf2",
+        "Nationality": "Burmese",
+        "Currency": "MMK",
+        "DialCode": "+95"
+      },
+      {
+        "CountryId": 120,
+        "Name": "Namibia",
+        "CountryCode": "NA",
+        "Emoji": "\\ud83c\\uddf3\\ud83c\\udde6",
+        "Nationality": "Namibian",
+        "Currency": "NAD",
+        "DialCode": "+264"
+      },
+      {
+        "CountryId": 121,
+        "Name": "Nauru",
+        "CountryCode": "NR",
+        "Emoji": "\\ud83c\\uddf3\\ud83c\\uddf7",
+        "Nationality": "Nauruan",
+        "Currency": "AUD",
+        "DialCode": "+674"
+      },
+      {
+        "CountryId": 122,
+        "Name": "Nepal",
+        "CountryCode": "NP",
+        "Emoji": "\\ud83c\\uddf3\\ud83c\\uddf5",
+        "Nationality": "Nepali",
+        "Currency": "NPR",
+        "DialCode": "+977"
+      },
+      {
+        "CountryId": 123,
+        "Name": "Netherlands",
+        "CountryCode": "NL",
+        "Emoji": "\\ud83c\\uddf3\\ud83c\\uddf1",
+        "Nationality": "Dutch",
+        "Currency": "EUR",
+        "DialCode": "+31"
+      },
+      {
+        "CountryId": 124,
+        "Name": "New Zealand",
+        "CountryCode": "NZ",
+        "Emoji": "\\ud83c\\uddf3\\ud83c\\uddff",
+        "Nationality": "New Zealander",
+        "Currency": "NZD",
+        "DialCode": "+64"
+      },
+      {
+        "CountryId": 125,
+        "Name": "Nicaragua",
+        "CountryCode": "NI",
+        "Emoji": "\\ud83c\\uddf3\\ud83c\\uddee",
+        "Nationality": "Nicaraguan",
+        "Currency": "NIO",
+        "DialCode": "+505"
+      },
+      {
+        "CountryId": 126,
+        "Name": "Niger",
+        "CountryCode": "NE",
+        "Emoji": "\\ud83c\\uddf3\\ud83c\\uddea",
+        "Nationality": "Nigerien",
+        "Currency": "XOF",
+        "DialCode": "+227"
+      },
+      {
+        "CountryId": 127,
+        "Name": "Nigeria",
+        "CountryCode": "NG",
+        "Emoji": "\\ud83c\\uddf3\\ud83c\\uddec",
+        "Nationality": "Nigerian",
+        "Currency": "NGN",
+        "DialCode": "+234"
+      },
+      {
+        "CountryId": 128,
+        "Name": "North Macedonia",
+        "CountryCode": "MK",
+        "Emoji": "\\ud83c\\uddf2\\ud83c\\uddf0",
+        "Nationality": "Macedonian",
+        "Currency": "MKD",
+        "DialCode": "+389"
+      },
+      {
+        "CountryId": 129,
+        "Name": "Norway",
+        "CountryCode": "NO",
+        "Emoji": "\\ud83c\\uddf3\\ud83c\\uddf4",
+        "Nationality": "Norwegian",
+        "Currency": "NOK",
+        "DialCode": "+47"
+      },
+      {
+        "CountryId": 130,
+        "Name": "Oman",
+        "CountryCode": "OM",
+        "Emoji": "\\ud83c\\uddf4\\ud83c\\uddf2",
+        "Nationality": "Omani",
+        "Currency": "OMR",
+        "DialCode": "+968"
+      },
+      {
+        "CountryId": 131,
+        "Name": "Pakistan",
+        "CountryCode": "PK",
+        "Emoji": "\\ud83c\\uddf5\\ud83c\\uddf0",
+        "Nationality": "Pakistani",
+        "Currency": "PKR",
+        "DialCode": "+92"
+      },
+      {
+        "CountryId": 132,
+        "Name": "Palau",
+        "CountryCode": "PW",
+        "Emoji": "\\ud83c\\uddf5\\ud83c\\uddfc",
+        "Nationality": "Palauan",
+        "Currency": "USD",
+        "DialCode": "+680"
+      },
+      {
+        "CountryId": 133,
+        "Name": "Palestine",
+        "CountryCode": "PS",
+        "Emoji": "\\ud83c\\uddf5\\ud83c\\uddf8",
+        "Nationality": "Palestinian",
+        "Currency": "ILS",
+        "DialCode": "+970"
+      },
+      {
+        "CountryId": 134,
+        "Name": "Panama",
+        "CountryCode": "PA",
+        "Emoji": "\\ud83c\\uddf5\\ud83c\\udde6",
+        "Nationality": "Panamanian",
+        "Currency": "PAB",
+        "DialCode": "+507"
+      },
+      {
+        "CountryId": 135,
+        "Name": "Papua New Guinea",
+        "CountryCode": "PG",
+        "Emoji": "\\ud83c\\uddf5\\ud83c\\uddec",
+        "Nationality": "Papua New Guinean",
+        "Currency": "PGK",
+        "DialCode": "+675"
+      },
+      {
+        "CountryId": 136,
+        "Name": "Paraguay",
+        "CountryCode": "PY",
+        "Emoji": "\\ud83c\\uddf5\\ud83c\\uddfe",
+        "Nationality": "Paraguayan",
+        "Currency": "PYG",
+        "DialCode": "+595"
+      },
+      {
+        "CountryId": 137,
+        "Name": "Peru",
+        "CountryCode": "PE",
+        "Emoji": "\\ud83c\\uddf5\\ud83c\\uddea",
+        "Nationality": "Peruvian",
+        "Currency": "PEN",
+        "DialCode": "+51"
+      },
+      {
+        "CountryId": 138,
+        "Name": "Philippines",
+        "CountryCode": "PH",
+        "Emoji": "\\ud83c\\uddf5\\ud83c\\udded",
+        "Nationality": "Filipino",
+        "Currency": "PHP",
+        "DialCode": "+63"
+      },
+      {
+        "CountryId": 139,
+        "Name": "Poland",
+        "CountryCode": "PL",
+        "Emoji": "\\ud83c\\uddf5\\ud83c\\uddf1",
+        "Nationality": "Polish",
+        "Currency": "PLN",
+        "DialCode": "+48"
+      },
+      {
+        "CountryId": 140,
+        "Name": "Portugal",
+        "CountryCode": "PT",
+        "Emoji": "\\ud83c\\uddf5\\ud83c\\uddf9",
+        "Nationality": "Portuguese",
+        "Currency": "EUR",
+        "DialCode": "+351"
+      },
+      {
+        "CountryId": 141,
+        "Name": "Qatar",
+        "CountryCode": "QA",
+        "Emoji": "\\ud83c\\uddf6\\ud83c\\udde6",
+        "Nationality": "Qatari",
+        "Currency": "QAR",
+        "DialCode": "+974"
+      },
+      {
+        "CountryId": 142,
+        "Name": "Romania",
+        "CountryCode": "RO",
+        "Emoji": "\\ud83c\\uddf7\\ud83c\\uddf4",
+        "Nationality": "Romanian",
+        "Currency": "RON",
+        "DialCode": "+40"
+      },
+      {
+        "CountryId": 143,
+        "Name": "Russia",
+        "CountryCode": "RU",
+        "Emoji": "\\ud83c\\uddf7\\ud83c\\uddfa",
+        "Nationality": "Russian",
+        "Currency": "RUB",
+        "DialCode": "+7"
+      },
+      {
+        "CountryId": 144,
+        "Name": "Rwanda",
+        "CountryCode": "RW",
+        "Emoji": "\\ud83c\\uddf7\\ud83c\\uddfc",
+        "Nationality": "Rwandan",
+        "Currency": "RWF",
+        "DialCode": "+250"
+      },
+      {
+        "CountryId": 145,
+        "Name": "Saint Kitts and Nevis",
+        "CountryCode": "KN",
+        "Emoji": "\\ud83c\\uddf0\\ud83c\\uddf3",
+        "Nationality": "Kittitian, Nevisian",
+        "Currency": "XCD",
+        "DialCode": "+1-869"
+      },
+      {
+        "CountryId": 146,
+        "Name": "Saint Lucia",
+        "CountryCode": "LC",
+        "Emoji": "\\ud83c\\uddf1\\ud83c\\udde8",
+        "Nationality": "Saint Lucian",
+        "Currency": "XCD",
+        "DialCode": "+1-758"
+      },
+      {
+        "CountryId": 147,
+        "Name": "Saint Vincent and the Grenadines",
+        "CountryCode": "VC",
+        "Emoji": "\\ud83c\\uddfb\\ud83c\\udde8",
+        "Nationality": "Saint Vincentian, Vincentian",
+        "Currency": "XCD",
+        "DialCode": "+1-784"
+      },
+      {
+        "CountryId": 148,
+        "Name": "Samoa",
+        "CountryCode": "WS",
+        "Emoji": "\\ud83c\\uddfc\\ud83c\\uddf8",
+        "Nationality": "Samoan",
+        "Currency": "WST",
+        "DialCode": "+685"
+      },
+      {
+        "CountryId": 149,
+        "Name": "San Marino",
+        "CountryCode": "SM",
+        "Emoji": "\\ud83c\\uddf2\\ud83c\\uddf2",
+        "Nationality": "Sammarinese",
+        "Currency": "EUR",
+        "DialCode": "+378"
+      },
+      {
+        "CountryId": 150,
+        "Name": "Sao Tome and Principe",
+        "CountryCode": "ST",
+        "Emoji": "\\ud83c\\uddf8\\ud83c\\uddf9",
+        "Nationality": "São Toméan",
+        "Currency": "STN",
+        "DialCode": "+239"
+      },
+      {
+        "CountryId": 151,
+        "Name": "Saudi Arabia",
+        "CountryCode": "SA",
+        "Emoji": "\\ud83c\\uddf8\\ud83c\\udde6",
+        "Nationality": "Saudi",
+        "Currency": "SAR",
+        "DialCode": "+966"
+      },
+      {
+        "CountryId": 152,
+        "Name": "Senegal",
+        "CountryCode": "SN",
+        "Emoji": "\\ud83c\\uddf8\\ud83c\\uddf3",
+        "Nationality": "Senegalese",
+        "Currency": "XOF",
+        "DialCode": "+221"
+      },
+      {
+        "CountryId": 153,
+        "Name": "Serbia",
+        "CountryCode": "RS",
+        "Emoji": "\\ud83c\\uddf7\\ud83c\\uddf8",
+        "Nationality": "Serbian",
+        "Currency": "RSD",
+        "DialCode": "+381"
+      },
+      {
+        "CountryId": 154,
+        "Name": "Seychelles",
+        "CountryCode": "SC",
+        "Emoji": "\\ud83c\\uddf8\\ud83c\\udde8",
+        "Nationality": "Seychellois",
+        "Currency": "SCR",
+        "DialCode": "+248"
+      },
+      {
+        "CountryId": 155,
+        "Name": "Sierra Leone",
+        "CountryCode": "SL",
+        "Emoji": "\\ud83c\\uddf8\\ud83c\\uddf1",
+        "Nationality": "Sierra Leonean",
+        "Currency": "SLL",
+        "DialCode": "+232"
+      },
+      {
+        "CountryId": 156,
+        "Name": "Singapore",
+        "CountryCode": "SG",
+        "Emoji": "\\ud83c\\uddf8\\ud83c\\uddec",
+        "Nationality": "Singaporean",
+        "Currency": "SGD",
+        "DialCode": "+65"
+      },
+      {
+        "CountryId": 157,
+        "Name": "Slovakia",
+        "CountryCode": "SK",
+        "Emoji": "\\ud83c\\uddf8\\ud83c\\uddf0",
+        "Nationality": "Slovak",
+        "Currency": "EUR",
+        "DialCode": "+421"
+      },
+      {
+        "CountryId": 158,
+        "Name": "Slovenia",
+        "CountryCode": "SI",
+        "Emoji": "\\ud83c\\uddf8\\ud83c\\uddee",
+        "Nationality": "Slovenian",
+        "Currency": "EUR",
+        "DialCode": "+386"
+      },
+      {
+        "CountryId": 159,
+        "Name": "Solomon Islands",
+        "CountryCode": "SB",
+        "Emoji": "\\ud83c\\uddf8\\ud83c\\udde7",
+        "Nationality": "Solomon Islander",
+        "Currency": "SBD",
+        "DialCode": "+677"
+      },
+      {
+        "CountryId": 160,
+        "Name": "Somalia",
+        "CountryCode": "SO",
+        "Emoji": "\\ud83c\\uddf8\\ud83c\\uddf4",
+        "Nationality": "Somali",
+        "Currency": "SOS",
+        "DialCode": "+252"
+      },
+      {
+        "CountryId": 161,
+        "Name": "South Africa",
+        "CountryCode": "ZA",
+        "Emoji": "\\ud83c\\uddf0\\ud83c\\udde6",
+        "Nationality": "South African",
+        "Currency": "ZAR",
+        "DialCode": "+27"
+      },
+      {
+        "CountryId": 162,
+        "Name": "South Sudan",
+        "CountryCode": "SS",
+        "Emoji": "\\ud83c\\uddf8\\ud83c\\uddf8",
+        "Nationality": "South Sudanese",
+        "Currency": "SSP",
+        "DialCode": "+211"
+      },
+      {
+        "CountryId": 163,
+        "Name": "Spain",
+        "CountryCode": "ES",
+        "Emoji": "\\ud83c\\uddea\\ud83c\\uddf8",
+        "Nationality": "Spanish",
+        "Currency": "EUR",
+        "DialCode": "+34"
+      },
+      {
+        "CountryId": 164,
+        "Name": "Sri Lanka",
+        "CountryCode": "LK",
+        "Emoji": "\\ud83c\\uddf1\\ud83c\\uddf0",
+        "Nationality": "Sri Lankan",
+        "Currency": "LKR",
+        "DialCode": "+94"
+      },
+      {
+        "CountryId": 165,
+        "Name": "Sudan",
+        "CountryCode": "SD",
+        "Emoji": "\\ud83c\\uddf8\\ud83c\\udde9",
+        "Nationality": "Sudanese",
+        "Currency": "SDG",
+        "DialCode": "+249"
+      },
+      {
+        "CountryId": 166,
+        "Name": "Suriname",
+        "CountryCode": "SR",
+        "Emoji": "\\ud83c\\uddf8\\ud83c\\uddf7",
+        "Nationality": "Surinamese",
+        "Currency": "SRD",
+        "DialCode": "+597"
+      },
+      {
+        "CountryId": 167,
+        "Name": "Sweden",
+        "CountryCode": "SE",
+        "Emoji": "\\ud83c\\uddf8\\ud83c\\uddea",
+        "Nationality": "Swedish",
+        "Currency": "SEK",
+        "DialCode": "+46"
+      },
+      {
+        "CountryId": 168,
+        "Name": "Switzerland",
+        "CountryCode": "CH",
+        "Emoji": "\\ud83c\\udde8\\ud83c\\udded",
+        "Nationality": "Swiss",
+        "Currency": "CHF",
+        "DialCode": "+41"
+      },
+      {
+        "CountryId": 169,
+        "Name": "Syria",
+        "CountryCode": "SY",
+        "Emoji": "\\ud83c\\uddf8\\ud83c\\uddfe",
+        "Nationality": "Syrian",
+        "Currency": "SYP",
+        "DialCode": "+963"
+      },
+      {
+        "CountryId": 170,
+        "Name": "Taiwan",
+        "CountryCode": "TW",
+        "Emoji": "\\ud83c\\uddf9\\ud83c\\uddfc",
+        "Nationality": "Taiwanese",
+        "Currency": "TWD",
+        "DialCode": "+886"
+      },
+      {
+        "CountryId": 171,
+        "Name": "Tajikistan",
+        "CountryCode": "TJ",
+        "Emoji": "\\ud83c\\uddf9\\ud83c\\uddef",
+        "Nationality": "Tajikistani",
+        "Currency": "TJS",
+        "DialCode": "+992"
+      },
+      {
+        "CountryId": 172,
+        "Name": "Tanzania",
+        "CountryCode": "TZ",
+        "Emoji": "\\ud83c\\uddf9\\ud83c\\uddff",
+        "Nationality": "Tanzanian",
+        "Currency": "TZS",
+        "DialCode": "+255"
+      },
+      {
+        "CountryId": 173,
+        "Name": "Thailand",
+        "CountryCode": "TH",
+        "Emoji": "\\ud83c\\uddf9\\ud83c\\udded",
+        "Nationality": "Thai",
+        "Currency": "THB",
+        "DialCode": "+66"
+      },
+      {
+        "CountryId": 174,
+        "Name": "Timor-Leste",
+        "CountryCode": "TL",
+        "Emoji": "\\ud83c\\uddf9\\ud83c\\uddf1",
+        "Nationality": "Timorese",
+        "Currency": "USD",
+        "DialCode": "+670"
+      },
+      {
+        "CountryId": 175,
+        "Name": "Togo",
+        "CountryCode": "TG",
+        "Emoji": "\\ud83c\\uddf9\\ud83c\\uddec",
+        "Nationality": "Togolese",
+        "Currency": "XOF",
+        "DialCode": "+228"
+      },
+      {
+        "CountryId": 176,
+        "Name": "Tonga",
+        "CountryCode": "TO",
+        "Emoji": "\\ud83c\\uddf9\\ud83c\\uddf4",
+        "Nationality": "Tongan",
+        "Currency": "TOP",
+        "DialCode": "+676"
+      },
+      {
+        "CountryId": 177,
+        "Name": "Trinidad and Tobago",
+        "CountryCode": "TT",
+        "Emoji": "\\ud83c\\uddf9\\ud83c\\uddf9",
+        "Nationality": "Trinidadian, Tobagonian",
+        "Currency": "TTD",
+        "DialCode": "+1-868"
+      },
+      {
+        "CountryId": 178,
+        "Name": "Tunisia",
+        "CountryCode": "TN",
+        "Emoji": "\\ud83c\\uddf9\\ud83c\\uddf3",
+        "Nationality": "Tunisian",
+        "Currency": "TND",
+        "DialCode": "+216"
+      },
+      {
+        "CountryId": 179,
+        "Name": "Turkey",
+        "CountryCode": "TR",
+        "Emoji": "\\ud83c\\uddf9\\ud83c\\uddf7",
+        "Nationality": "Turkish",
+        "Currency": "TRY",
+        "DialCode": "+90"
+      },
+      {
+        "CountryId": 180,
+        "Name": "Turkmenistan",
+        "CountryCode": "TM",
+        "Emoji": "\\ud83c\\uddf9\\ud83c\\uddf2",
+        "Nationality": "Turkmen",
+        "Currency": "TMT",
+        "DialCode": "+993"
+      },
+      {
+        "CountryId": 181,
+        "Name": "Tuvalu",
+        "CountryCode": "TV",
+        "Emoji": "\\ud83c\\uddf9\\ud83c\\uddfb",
+        "Nationality": "Tuvaluan",
+        "Currency": "AUD",
+        "DialCode": "+688"
+      },
+      {
+        "CountryId": 182,
+        "Name": "Uganda",
+        "CountryCode": "UG",
+        "Emoji": "\\ud83c\\uddfa\\ud83c\\uddec",
+        "Nationality": "Ugandan",
+        "Currency": "UGX",
+        "DialCode": "+256"
+      },
+      {
+        "CountryId": 183,
+        "Name": "Ukraine",
+        "CountryCode": "UA",
+        "Emoji": "\\ud83c\\uddfa\\ud83c\\udde6",
+        "Nationality": "Ukrainian",
+        "Currency": "UAH",
+        "DialCode": "+380"
+      },
+      {
+        "CountryId": 184,
+        "Name": "United Arab Emirates",
+        "CountryCode": "AE",
+        "Emoji": "\\ud83c\\udde6\\ud83c\\uddea",
+        "Nationality": "Emirati",
+        "Currency": "AED",
+        "DialCode": "+971"
+      },
+      {
+        "CountryId": 185,
+        "Name": "United Kingdom",
+        "CountryCode": "GB",
+        "Emoji": "\\ud83c\\uddec\\ud83c\\udde7",
+        "Nationality": "British",
+        "Currency": "GBP",
+        "DialCode": "+44"
+      },
+      {
+        "CountryId": 186,
+        "Name": "United States",
+        "CountryCode": "US",
+        "Emoji": "\\ud83c\\uddfa\\ud83c\\uddf8",
+        "Nationality": "American",
+        "Currency": "USD",
+        "DialCode": "+1"
+      },
+      {
+        "CountryId": 187,
+        "Name": "Uruguay",
+        "CountryCode": "UY",
+        "Emoji": "\\ud83c\\uddfa\\ud83c\\uddfe",
+        "Nationality": "Uruguayan",
+        "Currency": "UYU",
+        "DialCode": "+598"
+      },
+      {
+        "CountryId": 188,
+        "Name": "Uzbekistan",
+        "CountryCode": "UZ",
+        "Emoji": "\\ud83c\\uddfa\\ud83c\\uddff",
+        "Nationality": "Uzbekistani",
+        "Currency": "UZS",
+        "DialCode": "+998"
+      },
+      {
+        "CountryId": 189,
+        "Name": "Vanuatu",
+        "CountryCode": "VU",
+        "Emoji": "\\ud83c\\uddfb\\ud83c\\uddfa",
+        "Nationality": "Ni-Vanuatu",
+        "Currency": "VUV",
+        "DialCode": "+678"
+      },
+      {
+        "CountryId": 190,
+        "Name": "Vatican City",
+        "CountryCode": "VA",
+        "Emoji": "\\ud83c\\uddfb\\ud83c\\uddea",
+        "Nationality": "Vatican",
+        "Currency": "EUR",
+        "DialCode": "+39"
+      },
+      {
+        "CountryId": 191,
+        "Name": "Venezuela",
+        "CountryCode": "VE",
+        "Emoji": "\\ud83c\\uddfb\\ud83c\\uddea",
+        "Nationality": "Venezuelan",
+        "Currency": "VES",
+        "DialCode": "+58"
+      },
+      {
+        "CountryId": 192,
+        "Name": "Vietnam",
+        "CountryCode": "VN",
+        "Emoji": "\\ud83c\\uddfb\\ud83c\\uddf3",
+        "Nationality": "Vietnamese",
+        "Currency": "VND",
+        "DialCode": "+84"
+      },
+      {
+        "CountryId": 193,
+        "Name": "Yemen",
+        "CountryCode": "YE",
+        "Emoji": "\\ud83c\\uddfe\\ud83c\\uddea",
+        "Nationality": "Yemeni",
+        "Currency": "YER",
+        "DialCode": "+967"
+      },
+      {
+        "CountryId": 194,
+        "Name": "Zambia",
+        "CountryCode": "ZM",
+        "Emoji": "\\ud83c\\uddff\\ud83c\\uddf2",
+        "Nationality": "Zambian",
+        "Currency": "ZMW",
+        "DialCode": "+260"
+      },
+      {
+        "CountryId": 195,
+        "Name": "Zimbabwe",
+        "CountryCode": "ZW",
+        "Emoji": "\\ud83c\\uddff\\ud83c\\uddfc",
+        "Nationality": "Zimbabwean",
+        "Currency": "ZWL",
+        "DialCode": "+263"
+      }
+    ],
+    "ConversationFlagType": [
+      {
+        "ConversationFlagId": 1,
+        "Title": "Inappropriate Content",
+        "Subtitle": "Report messages or media that contain offensive, abusive, or explicit content."
+      },
+      {
+        "ConversationFlagId": 2,
+        "Title": "Harassment or Bullying",
+        "Subtitle": "Report users who are targeting, harassing, or bullying you or others."
+      },
+      {
+        "ConversationFlagId": 3,
+        "Title": "Spam or Scams",
+        "Subtitle": "Report users who are sending unwanted, repetitive messages or attempting to scam others."
+      },
+      {
+        "ConversationFlagId": 4,
+        "Title": "Fake Profile",
+        "Subtitle": "Report users who you suspect are using a fake profile or pretending to be someone else."
+      },
+      {
+        "ConversationFlagId": 5,
+        "Title": "Hate Speech",
+        "Subtitle": "Report users who are sharing content that promotes hate or violence against individuals or groups."
+      },
+      {
+        "ConversationFlagId": 6,
+        "Title": "Threats or Violence",
+        "Subtitle": "Report users who are making threats or promoting violence."
+      },
+      {
+        "ConversationFlagId": 7,
+        "Title": "Privacy Violation",
+        "Subtitle": "Report users who are sharing your personal information without consent."
+      },
+      {
+        "ConversationFlagId": 8,
+        "Title": "Self-harm or Suicide",
+        "Subtitle": "Report users who may be considering self-harm or suicide for immediate assistance."
+      },
+      {
+        "ConversationFlagId": 9,
+        "Title": "Underage User",
+        "Subtitle": "Report users who you believe are under the required age to use this app."
+      },
+      {
+        "ConversationFlagId": 10,
+        "Title": "Nudity & Adult Content",
+        "Subtitle": "Report users sharing nude images, explicit content, or adult materials."
+      }
+    ],
+    "AccountHolderType": [
+      {
+        "AccountHolderTypeId": 1,
+        "Name": "Individual"
+      }
+    ],
+    "ReimbursementType": [
+      {
+        "ReimbursementTypeId": 1,
+        "ReimbursementTypeName": "Donation-Related Expenses",
+        "ReimbursementTypeDescription": "Donation-Related Expenses"
+      },
+      {
+        "ReimbursementTypeId": 2,
+        "ReimbursementTypeName": "Egg Charges",
+        "ReimbursementTypeDescription": "Egg Charges"
+      },
+      {
+        "ReimbursementTypeId": 3,
+        "ReimbursementTypeName": "Travel Expense",
+        "ReimbursementTypeDescription": "Travel expense"
+      },
+      {
+        "ReimbursementTypeId": 4,
+        "ReimbursementTypeName": "Shipping Cost",
+        "ReimbursementTypeDescription": "Shipping cost"
+      },
+      {
+        "ReimbursementTypeId": 5,
+        "ReimbursementTypeName": "Accommodation Cost",
+        "ReimbursementTypeDescription": "Accommodation cost"
+      },
+      {
+        "ReimbursementTypeId": 6,
+        "ReimbursementTypeName": "Miscellaneous Cost",
+        "ReimbursementTypeDescription": "Miscellaneous cost"
+      }
+    ],
+    "MedicalReport": [
+      {
+        "MedicalReportId": 1,
+        "MedicalReportName": "STD Report",
+        "MedicalReportDescription": "STD testing as part of family planning involves screening for various infections, including HIV, syphilis, chlamydia, gonorrhea, and herpes.\n\nSTD testing help healthcare providers tailor appropriate interventions, treatment plans, or preventive measures for a healthy and successful pregnancy.\t"
+      },
+      {
+        "MedicalReportId": 2,
+        "MedicalReportName": "Semen Report",
+        "MedicalReportDescription": "A semen analysis evaluates the sperm in a sample, examining sperm count, motility, morphology, and other factors.\n\nProvides insights into a donor's fertility health, ensuring the quality of sperm being donated, which is vital for successful conception.\t"
+      },
+      {
+        "MedicalReportId": 3,
+        "MedicalReportName": "Genetic Report",
+        "MedicalReportDescription": "Genetic testing examines an individual's DNA for alterations or variations that might indicate the presence of certain genetic conditions or traits.\n\nIt helps identify potential genetic disorders or hereditary conditions that could be inherited by offspring, aiding in informed decision-making for donors and recipients.\t"
+      },
+      {
+        "MedicalReportId": 4,
+        "MedicalReportName": "Blood Report",
+        "MedicalReportDescription": "Blood Report"
+      },
+      {
+        "MedicalReportId": 5,
+        "MedicalReportName": "Chromosome Analysis (Karyotyping)",
+        "MedicalReportDescription": "Chromosome Analysis (Karyotyping)"
+      },
+      {
+        "MedicalReportId": 6,
+        "MedicalReportName": "Testicular biopsy Report",
+        "MedicalReportDescription": "Testicular biopsy Report"
+      },
+      {
+        "MedicalReportId": 7,
+        "MedicalReportName": "Scrotal ultrasound Report",
+        "MedicalReportDescription": "Scrotal ultrasound Report"
+      },
+      {
+        "MedicalReportId": 8,
+        "MedicalReportName": "Hormone testing Report",
+        "MedicalReportDescription": "Hormone testing Report"
+      },
+      {
+        "MedicalReportId": 9,
+        "MedicalReportName": "Post-ejaculation urinalysis Report",
+        "MedicalReportDescription": "Post-ejaculation urinalysis Report"
+      },
+      {
+        "MedicalReportId": 10,
+        "MedicalReportName": "Gonadotropin response Report",
+        "MedicalReportDescription": "Gonadotropin response Report"
+      }
+    ],
+    "IdentityDocument": [
+      {
+        "DocumentID": 1,
+        "DocumentType": "Passport",
+        "Description": "Proof of identity document - Passport",
+        "IsFront": true,
+        "IsBack": false
+      },
+      {
+        "DocumentID": 2,
+        "DocumentType": "Driver's Licence",
+        "Description": "Proof of identity document - Driver's licence",
+        "IsFront": true,
+        "IsBack": true
+      },
+      {
+        "DocumentID": 3,
+        "DocumentType": "Permanent Resident Card",
+        "Description": "Proof of identity document - Permanent Resident card",
+        "IsFront": true,
+        "IsBack": true
+      },
+      {
+        "DocumentID": 4,
+        "DocumentType": "Photo Identity Card",
+        "Description": "Proof of identity document - Provincial or territorial issued photo identity cards",
+        "IsFront": true,
+        "IsBack": true
+      },
+      {
+        "DocumentID": 5,
+        "DocumentType": "Indian Status Card",
+        "Description": "Proof of identity document - Certificate of Indian Status card",
+        "IsFront": true,
+        "IsBack": false
+      },
+      {
+        "DocumentID": 6,
+        "DocumentType": "Birth Certificate",
+        "Description": "Proof of identity document - Birth certificate",
+        "IsFront": true,
+        "IsBack": false
+      },
+      {
+        "DocumentID": 7,
+        "DocumentType": "Marriage Certificate",
+        "Description": "Proof of identity document - Marriage certificate",
+        "IsFront": true,
+        "IsBack": false
+      }
+    ],
+    "AddressDocument": [
+      {
+        "DocumentID": 1,
+        "DocumentType": "Driver's Licence",
+        "Description": "Proof of address document - Driver's licence",
+        "IsFront": true,
+        "IsBack": true
+      },
+      {
+        "DocumentID": 2,
+        "DocumentType": "Photo Identity Card",
+        "Description": "Proof of address document - Provincial or territorial issued photo identity cards",
+        "IsFront": true,
+        "IsBack": true
+      },
+      {
+        "DocumentID": 3,
+        "DocumentType": "Insurance Document",
+        "Description": "Proof of address document - Insurance document",
+        "IsFront": true,
+        "IsBack": false
+      },
+      {
+        "DocumentID": 4,
+        "DocumentType": "Investment Account Statement",
+        "Description": "Proof of address document - Investment account statement",
+        "IsFront": true,
+        "IsBack": false
+      },
+      {
+        "DocumentID": 5,
+        "DocumentType": "Property Tax Statement",
+        "Description": "Proof of address document - Property tax statement",
+        "IsFront": true,
+        "IsBack": false
+      },
+      {
+        "DocumentID": 6,
+        "DocumentType": "Bank Statement",
+        "Description": "Proof of address document - Bank statement",
+        "IsFront": true,
+        "IsBack": false
+      },
+      {
+        "DocumentID": 7,
+        "DocumentType": "Utility Bill",
+        "Description": "Proof of address document - Utility bill",
+        "IsFront": true,
+        "IsBack": false
+      }
+    ]
+  }
+}

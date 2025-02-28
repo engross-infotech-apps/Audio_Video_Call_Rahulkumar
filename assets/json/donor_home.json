@@ -1,0 +1,136 @@
+{
+    "statusCode": 200,
+    "message": "Success",
+    "data": {
+        "IsFeedbackShow": true,
+        "ProfileCompletionPercentage": 85,
+        "IsVerified": true,
+        "FullName": "Kaushik",
+        "IsUploadDocumentStatus": true,
+        "LikesCount": 6,
+        "UnreadLikeCount": 0,
+        "AverageRating": 2.67,
+        "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1738155610758_m6hwyz1y.jpg",
+        "User": [
+            {
+                "UserId": 181,
+                "UserName": "Zoyaly",
+                "Latitude": "55.4674937",
+                "Longitude": "-106.5126775",
+                "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1739177431085_m6ytcldg.jpg",
+                "Distance": 74.43
+            },
+            {
+                "UserId": 182,
+                "UserName": "Jomdy",
+                "Latitude": "59.1679142",
+                "Longitude": "-105.9491947",
+                "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1738155610758_m6hwyz1y.jpg",
+                "Distance": 338.59
+            },
+            {
+                "UserId": 183,
+                "UserName": "Mustang Bell",
+                "Latitude": "61.1264802",
+                "Longitude": "-105.0734286",
+                "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1739177431085_m6ytcldg.jpg",
+                "Distance": 560.38
+            },
+            {
+                "UserId": 219,
+                "UserName": "Prexa wow",
+                "Latitude": "49.2888039",
+                "Longitude": "-123.1114434",
+                "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1732531749752_m3wwotlc.jpg",
+                "Distance": 1356.16
+            }
+        ],
+        "UserLikes": [
+            {
+                "UserId": 76,
+                "FullName": "Ankit Patel",
+                "DisplayName": "EIT_AK",
+                "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1739177431085_m6ytcldg.jpg",
+                "City": "Cupertino",
+                "State": "CA",
+                "IsVerified": true,
+                "CreatedDate": "2025-02-03T11:13:43.970Z"
+            },
+            {
+                "UserId": 71,
+                "FullName": "Kaushik",
+                "DisplayName": null,
+                "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1738155610758_m6hwyz1y.jpg",
+                "City": "Pinehouse",
+                "State": "Saskatchewan",
+                "IsVerified": true,
+                "CreatedDate": "2024-11-05T11:38:06.763Z"
+            },
+            {
+                "UserId": 150,
+                "FullName": "Peter King",
+                "DisplayName": "Peter",
+                "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1739177431085_m6ytcldg.jpg",
+                "City": "Cupertino",
+                "State": "CA",
+                "IsVerified": true,
+                "CreatedDate": "2024-08-28T07:03:43.107Z"
+            },
+            {
+                "UserId": 106,
+                "FullName": "Ashish",
+                "DisplayName": null,
+                "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1738155610758_m6hwyz1y.jpg",
+                "City": null,
+                "State": null,
+                "IsVerified": true,
+                "CreatedDate": "2024-08-08T08:23:52.750Z"
+            },
+            {
+                "UserId": 80,
+                "FullName": "hardik",
+                "DisplayName": "Peter Parker",
+                "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1732531749752_m3wwotlc.jpg",
+                "City": "Surat",
+                "State": "GJ",
+                "IsVerified": true,
+                "CreatedDate": "2024-06-06T06:28:14.810Z"
+            }
+        ],
+        "RecentChats": [],
+        "UserBookmark": [
+            {
+                "UserId": 228,
+                "DonorId": 228,
+                "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1733936881925_m4k5bsm0.jpg",
+                "FullName": "Pru",
+                "DisplayName": null,
+                "IsVerified": null
+            },
+            {
+                "UserId": 242,
+                "DonorId": 242,
+                "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1738063963847_m6geeux5.jpg",
+                "FullName": "wow",
+                "DisplayName": null,
+                "IsVerified": null
+            },
+            {
+                "UserId": 156,
+                "DonorId": 156,
+                "ProfilePicture": "https://gokidu.s3.ca-central-1.amazonaws.com/avtar/209e53f1-30e7-4969-98a8-b11cb2704c7c.jpg",
+                "FullName": "Ashish",
+                "DisplayName": "Asis",
+                "IsVerified": false
+            },
+            {
+                "UserId": 106,
+                "DonorId": 106,
+                "ProfilePicture": "https://gokidu.s3.ca-central-1.amazonaws.com/avtar/c43afcb9-d554-4097-908b-8b449bdc6a3b.jpg",
+                "FullName": "Ashish",
+                "DisplayName": null,
+                "IsVerified": null
+            }
+        ]
+    }
+}

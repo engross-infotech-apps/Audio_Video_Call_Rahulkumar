@@ -1,0 +1,108 @@
+{
+    "statusCode": 200,
+    "message": "Success",
+    "data": {
+        "DonorProfileDetail": {
+            "ProfileCompletionPercentage": 85,
+            "UserType": 1,
+            "RoleId": 2,
+            "DisplayName": null,
+            "Email": "donor@test.com",
+            "FullName": "Donor",
+            "DOB": "1991-05-08",
+            "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1738155610758_m6hwyz1y.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWQUOZ2LX45GZJBAT%2F20250214%2Fca-central-1%2Fs3%2Faws4_request&X-Amz-Date=20250214T070017Z&X-Amz-Expires=604800&X-Amz-Signature=2650e16524a176bd1139a29bff13f924bcd6ff9c2ff4aa43bf26a2dafbbdaab6&X-Amz-SignedHeaders=host&response-content-disposition=inline",
+            "AboutMe": "We believe in the extraordinary power of inclusive parenthood. Our story is one of  ation, and the unwavering belief that everyone deserves a chance to start a family.GoKidu is more than a platform\nit's a community of dreamers, innovators, and individuals committed to redefining the journey to parenthood. We understand the unique challenges faced by couples, including those from the LGBTQ+ community and individuals dealing with infertility.",
+            "LikesCount": 7,
+            "RatingCount": 3,
+            "AverageRating": 2.666666,
+            "Age": 33,
+            "Address": "66CR+5X Kursipar, Madhya Pradesh, India",
+            "City": "Kursipar",
+            "State": "Madhya Pradesh",
+            "Latitude": "22.2204287",
+            "Longitude": "79.24240089999999",
+            "Height": 185,
+            "HairColorId": null,
+            "HairColor": null,
+            "EyeColorId": 4,
+            "EyeColor": "Black",
+            "EthnicityId": 4,
+            "EthnicityName": "Latino/Hispanic",
+            "OtherEthnicity": null,
+            "BloodGroup": "A+",
+            "CountryId": 75,
+            "CountryName": "India",
+            "NationalityId": 2,
+            "ReligiousId": 1,
+            "OtherReligious": null,
+            "ReligiousName": "Christianity",
+            "CurrentOccupation": null,
+            "ProfessionId": 1,
+            "ProfessionName": "Accountant",
+            "EducationId": 2,
+            "EducationName": "Associate's Degree",
+            "IsEnableNotificationsAlerts": true,
+            "IsEnableEmailsAlerts": true,
+            "IsVerified": true,
+            "IsAnonymous": false,
+            "IsUploadDocumentStatus": true,
+            "IsEmailUser": true,
+            "STDTestStatus": true,
+            "STDTestReportFile": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/medicalReport/IMG-20241004-WA0001_m1uqnu8a.jpg",
+            "STDTestReportDate": "2025-01-30T07:47:01.960Z",
+            "GeneticTestStatus": true,
+            "GeneticTestReportFile": "https://gokidu.s3.ca-central-1.amazonaws.com/medicalReport/e7ba255c-cfc8-4713-84df-096f40ead6b7.jpg",
+            "GeneticTestReportDate": "2024-11-05T11:41:02.427Z",
+            "SemenTestStatus": true,
+            "SemenTestReportFile": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/medicalReport/20240915_183541_m34dplz5.jpg",
+            "SemenTestReportDate": "2024-11-05T11:41:02.427Z"
+        },
+        "UserImage": [
+            {
+                "UserImageId": 266,
+                "ImageName": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/1000072889_m2oph7za.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWQUOZ2LX45GZJBAT%2F20250214%2Fca-central-1%2Fs3%2Faws4_request&X-Amz-Date=20250214T070017Z&X-Amz-Expires=604800&X-Amz-Signature=a80b5e69cb1cb4f3d4be2a5eb2001fe92d4d16d9d7f9398c159a44a16e1542ce&X-Amz-SignedHeaders=host&response-content-disposition=inline"
+            },
+            {
+                "UserImageId": 268,
+                "ImageName": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/1000071743_m2ophj6j.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWQUOZ2LX45GZJBAT%2F20250214%2Fca-central-1%2Fs3%2Faws4_request&X-Amz-Date=20250214T070017Z&X-Amz-Expires=604800&X-Amz-Signature=bac4b7dc44e8c008c90c2f8709a344fd3d233202d8f42b078bf53404d85fcb6c&X-Amz-SignedHeaders=host&response-content-disposition=inline"
+            }
+        ],
+        "MedicalReports": [
+            {
+                "UserMedicalReportId": 66,
+                "MedicalReportId": 3,
+                "MedicalReportName": "Genetic Report",
+                "UploadedOn": "2024-11-05T11:41:02.427Z",
+                "FilePath": "https://gokidu.s3.ca-central-1.amazonaws.com/medicalReport/e7ba255c-cfc8-4713-84df-096f40ead6b7.jpg"
+            },
+            {
+                "UserMedicalReportId": 134,
+                "MedicalReportId": 1,
+                "MedicalReportName": "STD Report",
+                "UploadedOn": "2025-01-30T07:47:01.960Z",
+                "FilePath": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/medicalReport/IMG-20241004-WA0001_m1uqnu8a.jpg"
+            },
+            {
+                "UserMedicalReportId": 136,
+                "MedicalReportId": 4,
+                "MedicalReportName": "Blood Report",
+                "UploadedOn": "2025-01-30T07:47:01.960Z",
+                "FilePath": "https://gokidu.s3.ca-central-1.amazonaws.com/medicalReport/073439ec-9a8c-4e0c-bbc8-24b8ec83d1a8.jpg"
+            },
+            {
+                "UserMedicalReportId": 137,
+                "MedicalReportId": 5,
+                "MedicalReportName": "Chromosome Analysis (Karyotyping)",
+                "UploadedOn": "2024-09-24T07:02:42.560Z",
+                "FilePath": "https://gokidu.s3.ca-central-1.amazonaws.com/medicalReport/4317eef3-364d-40d5-8898-a615b533114e.jpg"
+            },
+            {
+                "UserMedicalReportId": 240,
+                "MedicalReportId": 2,
+                "MedicalReportName": "Semen Report",
+                "UploadedOn": "2024-11-05T11:41:02.427Z",
+                "FilePath": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/medicalReport/20240915_183541_m34dplz5.jpg"
+            }
+        ]
+    }
+}

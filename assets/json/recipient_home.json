@@ -1,0 +1,111 @@
+{
+    "statusCode": 200,
+    "message": "Success",
+    "data": {
+        "IsFeedbackShow": true,
+        "NearByUser": [
+            {
+                "UserId": 144,
+                "UserName": "Kapil",
+                "Latitude": "37.3309208",
+                "Longitude": "-122.0296268",
+                "ProfilePicture": "https://gokidu.s3.ca-central-1.amazonaws.com/avtar/c1fae531-b41a-49bd-9497-991790bb6833.jpg",
+                "Distance": 0
+            },
+            {
+                "UserId": 145,
+                "UserName": "Kapil",
+                "Latitude": "37.3309208",
+                "Longitude": "-122.0296268",
+                "ProfilePicture": "https://gokidu.s3.ca-central-1.amazonaws.com/avtar/2a532586-5dc6-4f2d-a23e-ef35dd58efe0.jpg",
+                "Distance": 0
+            },
+            {
+                "UserId": 174,
+                "UserName": "Radhe",
+                "Latitude": "37.3309208",
+                "Longitude": "-122.0296268",
+                "ProfilePicture": "https://gokidu.s3.ca-central-1.amazonaws.com/avtar/df31a1d6-a183-4c09-85bc-7404fde87ae7.jpg",
+                "Distance": 0
+            },
+            {
+                "UserId": 75,
+                "UserName": "Hardik Parmar",
+                "Latitude": "37.3300731",
+                "Longitude": "-122.0265632",
+                "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_2804970B-7F0A-49CD-AFCC-521B29275785-56294-000000173DE6B6E4_m200z2dp.jpg",
+                "Distance": 0.29
+            }
+        ],
+        "UserLikes": [
+            {
+                "UserId": 222,
+                "DonorId": 222,
+                "FullName": "Manish",
+                "DisplayName": null,
+                "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1732534369568_m3wy8xrc.jpg",
+                "City": "Tustin",
+                "State": "California",
+                "IsVerified": null,
+                "CreatedDate": "2024-12-23T10:03:33.980Z"
+            },
+            {
+                "UserId": 224,
+                "DonorId": 224,
+                "FullName": "Bhim",
+                "DisplayName": null,
+                "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1733925497051_m4jyh24o.jpg",
+                "City": "Tustin",
+                "State": "California",
+                "IsVerified": null,
+                "CreatedDate": "2024-12-18T10:52:11.703Z"
+            },
+            {
+                "UserId": 214,
+                "DonorId": 214,
+                "FullName": "Priyansh Soni",
+                "DisplayName": null,
+                "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1731475465674_m3ffth84.jpg",
+                "City": "Tustin",
+                "State": "California",
+                "IsVerified": null,
+                "CreatedDate": "2024-11-13T06:39:14.133Z"
+            },
+            {
+                "UserId": 118,
+                "DonorId": 118,
+                "FullName": "Hemish Patel",
+                "DisplayName": "Hemish Patel",
+                "ProfilePicture": "https://gokidu.s3.ca-central-1.amazonaws.com/avtar/fc4ae29d-0703-4e9d-8107-14e81aaf2828.jpg",
+                "City": "Tustin",
+                "State": "California",
+                "IsVerified": null,
+                "CreatedDate": "2024-10-25T09:21:58.753Z"
+            },
+            {
+                "UserId": 71,
+                "DonorId": 71,
+                "FullName": "Kaushik",
+                "DisplayName": null,
+                "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1738155610758_m6hwyz1y.jpg",
+                "City": "Pinehouse",
+                "State": "Saskatchewan",
+                "IsVerified": null,
+                "CreatedDate": "2024-09-04T05:43:48.640Z"
+            }
+        ],
+        "UserBookmark": [],
+        "IsDonorPreferencesAdded": true,
+        "IsVerified": false,
+        "FullName": "Ankit Patel",
+        "DisplayName": "EIT_AK",
+        "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1739177431085_m6ytcldg.jpg",
+        "EthnicityId": 4,
+        "OtherEthnicity": null,
+        "NationalityId": 1,
+        "IsUploadDocumentStatus": true,
+        "LikesCount": 5,
+        "UnreadLikeCount": 0,
+        "AverageRating": 4
+    }
+}

@@ -1,4 +1,4 @@
-# demo_agora
+# gokidu_app_tour
 
 A new Flutter project.
 

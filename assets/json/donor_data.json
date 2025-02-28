@@ -1,0 +1,31 @@
+{
+    "statusCode": 200,
+    "message": "Success",
+    "data": {
+        "UserId": 71,
+        "UserType": 1,
+        "RoleId": 2,
+        "DisplayName": null,
+        "FullName": "Donor",
+        "DOB": "1991-05-08T00:00:00.000Z",
+        "Email": "donor@test.com",
+        "ProfilePicture": "https://gokidu-dev.s3.ca-central-1.amazonaws.com/avtar/image_cropper_1738155610758_m6hwyz1y.jpg",
+        "Address": "958M4MJ3+47",
+        "City": "Pinehouse",
+        "State": "Saskatchewan",
+        "Country": "Canada",
+        "ZipCode": "S0J 2B0",
+        "CountryId": 1,
+        "Currency": "USD",
+        "IsVerified": true,
+        "IsEnableNotificationsAlerts": true,
+        "IsEnableEmailsAlerts": true,
+        "IsUploadDocumentStatus": true,
+        "IsEmailUser": true,
+        "StripeConnectAccountId": "",
+        "DocumentFrontImage": "https://gokidu.s3.ca-central-1.amazonaws.com/documents/e4f67b4d-6354-451d-8bf8-84b9caedcb3b.jpg",
+        "DocumentBackImage": "https://gokidu.s3.ca-central-1.amazonaws.com/temp/e4f67b4d-6354-451d-8bf8-84b9caedcb3b.jpg",
+        "CurrencySymbol": "$",
+        "IsAddedBankAccount": true
+    }
+}
