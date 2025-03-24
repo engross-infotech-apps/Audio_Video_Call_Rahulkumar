@@ -1,7 +1,10 @@
 import 'package:agora_rtc_engine/agora_rtc_engine.dart';
 import 'package:demo_agora/calling_page/calling_controller/calling_controller.dart';
+import 'package:demo_agora/helpers/app_colors.dart';
+import 'package:demo_agora/helpers/app_style.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 
 class CallingPage extends StatelessWidget {
@@ -11,7 +14,10 @@ class CallingPage extends StatelessWidget {
 
   Widget showDisableBg() {
     return Container(
-      decoration: BoxDecoration(color: Colors.black54),
+      decoration: BoxDecoration(gradient: callGradient),
+
+      // image:
+      //     DecorationImage(image: AssetImage("assets/img/back_call.png"))),
     );
   }
 
@@ -19,9 +25,9 @@ class CallingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     // return GetBuilder<CallingController>(builder: (controller) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Agora Video Call'),
-      ),
+      // appBar: AppBar(
+      //     // title: const Text('Agora Video Call'),
+      //     ),
       body: Stack(
         children: [
           Center(
@@ -49,7 +55,8 @@ class CallingPage extends StatelessWidget {
               child: Center(child: Obx(() {
                 debugPrint(
                     "checkVideoController:- ${controller.localUserJoined.value}");
-                return controller.localUserJoined.value && controller.isVideoCall.value&&
+                return controller.localUserJoined.value &&
+                        controller.isVideoCall.value &&
                         controller.remoteUid.value != 0 &&
                         controller.remoteUid.value != null
                     ? localUserVideo()
@@ -134,9 +141,9 @@ class CallingPage extends StatelessWidget {
           Obx(() {
             return controller.localUserJoined.value
                 ? Positioned(
-                    bottom: 50,
-                    left: 20,
-                    right: 20,
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
                     child: GestureDetector(
                       onTap: () {
                         // controller.leaveChannel();
@@ -144,7 +151,7 @@ class CallingPage extends StatelessWidget {
                       child: Center(
                         child: Container(
                           padding: EdgeInsets.all(1),
-                          width: MediaQuery.of(context).size.width / 100 * 80,
+                          width: MediaQuery.of(context).size.width / 100 * 100,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(10),
@@ -152,38 +159,119 @@ class CallingPage extends StatelessWidget {
                                 topLeft: Radius.circular(10),
                                 topRight: Radius.circular(10),
                               ),
-                              color: Colors.grey),
+                              color: Colors.transparent),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              setupIcons(
-                                  Icons.mic_none_outlined,
-                                  controller.isMicEnable.value
-                                      ? Colors.lightGreen.shade300
-                                      : Colors.black12, () {
-                                controller.updateMic();
-                              }),
-                              controller.isVideoCall.value
-                                  ? setupIcons(
-                                      Icons.cameraswitch_outlined,
-                                        Colors.black12, () {
-                                      controller.changeCamera();
-                                    })
-                                  : SizedBox(),
+                              ///Audio controls
+                              !controller.isVideoCall.value
+                                  ? Container(
+                                      height: 140,
+                                      width: MediaQuery.of(context).size.width /
+                                          100 *
+                                          99.4,
+                                      child: Padding(
+                                        padding: EdgeInsets.all(18.0),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: [
+                                            ///
+                                            !controller.isVideoCall.value
+                                                ? setupIcons(
+                                                    controller.isSoundEnable.value
+                                                        ? Icons.volume_up_rounded
+                                                        : Icons
+                                                            .volume_off_rounded,
+                                                    AppColors.iconBg, () {
+                                                    controller
+                                                        .updateSoundSpeaker();
+                                                  })
+                                                : SizedBox(),
 
-                              controller.isVideoCall.value
-                                  ? setupIcons(
-                                      Icons.camera_alt_outlined,
-                                      controller.isCameraEnable.value
-                                          ? Colors.lightGreen.shade300
-                                          : Colors.black12, () {
-                                      controller.updateCamera();
-                                    })
-                                  : SizedBox(),
-                              setupIcons(Icons.call_end, Colors.red, () {
-                                controller.leaveChannel();
-                              }),
+                                            ///
+                                            setupIcons(Icons.call_end, Colors.red,
+                                                () {
+                                              controller.leaveChannel();
+                                            }),
+
+                                            ///
+                                            setupIcons(
+                                                controller.isMicEnable.value
+                                                    ? Icons.mic
+                                                    : Icons.mic_off,
+                                                AppColors.iconBg, () {
+                                              controller.updateMic();
+                                            }),
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  : Container(
+                                      color: AppColors.iconBg.withAlpha(130),
+                                      height: 140,
+                                      width: MediaQuery.of(context).size.width /
+                                          100 *
+                                          99.4,
+                                      child: Padding(
+                                        padding: EdgeInsets.all(18.0),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            ///
+                                            controller.isVideoCall.value
+                                                ? setupIcons(
+                                                    Icons.cameraswitch_outlined,
+                                                    Colors.transparent, () {
+                                                    controller.changeCamera();
+                                                  })
+                                                : SizedBox(),
+
+                                            ///
+                                            controller.isVideoCall.value
+                                                ? GestureDetector(
+                                                    onTap: () {
+                                                      controller.updateCamera();
+                                                    },
+                                                    child: SvgPicture.asset(
+                                                      controller.isCameraEnable
+                                                              .value
+                                                          ? "assets/img/recording.svg"
+                                                          : "assets/img/recording_off.svg",
+                                                    ),
+                                                  )
+                                                /*setupIcons(
+                                                    Icons.camera_alt_outlined,
+                                                    controller.isCameraEnable.value
+                                                        ? Colors.lightGreen.shade300
+                                                        : Colors.black12, () {
+                                                    controller.updateCamera();
+                                                  })*/
+                                                : SizedBox(),
+
+                                            ///
+                                            setupIcons(
+                                                Icons.call_end, Colors.red, () {
+                                              controller.leaveChannel();
+                                            }),
+
+                                            ///
+                                            setupIcons(
+                                                controller.isMicEnable.value
+                                                    ? Icons.mic
+                                                    : Icons.mic_off,
+                                                Colors.transparent, () {
+                                              controller.updateMic();
+                                            }),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
                             ],
                           ),
                         ),

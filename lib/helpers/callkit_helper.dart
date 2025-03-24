@@ -34,28 +34,44 @@ class CallkitHelper {
   // Method to show incoming call
   Future<void> showIncomingCall(Map<String, dynamic> data) async {
     // {type: call, channel_id: , call_type: 0,call_from:}
+
     final callKitParams = CallKitParams(
       id: data['callId'] ?? Uuid().v4(),
       nameCaller: data['call_from'] ?? "Unknown Caller",
       handle: data['callerId'] ?? "N/A",
       type: data['call_type'] == '1' ? 1 : 0,
       // 0 for audio, 1 for video
-      extra: {
-        'deepLink': 'myapp://call/accept?id=${data['id']}&caller=${data['nameCaller']}',
-
-        "channel": data['channel_id'], "call_type": data['call_type']},
+      extra: {"channel": data['channel_id'], "call_type": data['call_type']},
+      avatar: data["avatar"],
+        // Incoming call/Outgoing call display time (second). If the time is over, the call will be missed.
+      duration: 30000,
       android: const AndroidParams(
         // Customize your Android full-screen notification here:
         isCustomNotification: true,
         ringtonePath: 'system_ringtone_default',
+        // backgroundColor: "#ffffff",
+        backgroundUrl: "assets/img/back_call.png"
+
         // More customization options as needed
+
       ),
       ios: const IOSParams(
         iconName: 'CallKitLogo',
+        handleType: 'generic',
         supportsVideo: true,
+        maximumCallGroups: 2,
+        maximumCallsPerCallGroup: 1,
+        audioSessionMode: 'default',
+        audioSessionActive: true,
+        audioSessionPreferredSampleRate: 44100.0,
+        audioSessionPreferredIOBufferDuration: 0.005,
+        supportsDTMF: true,
+        supportsHolding: true,
+        supportsGrouping: false,
+        supportsUngrouping: false,
+        ringtonePath: 'system_ringtone_default',
       ),
     );
-
 
     // Show the native incoming call UI
     await FlutterCallkitIncoming.showCallkitIncoming(callKitParams);
@@ -73,12 +89,11 @@ class CallkitHelper {
     FlutterCallkitIncoming.onEvent.listen((CallEvent? event) {
       debugPrint("event--> ${event!.event}");
       switch (event!.event) {
-
         case Event.actionCallAccept:
           // Handle call acceptance
           debugPrint("event--> ${event.body}");
-          String channelId = event.body["extra"]["channel"];
-          String callType = event.body["extra"]["call_type"];
+          String channelId = event.body["extra"]["channel"]??event.body["handle"];
+          String callType = event.body["extra"]["call_type"]??event.body["type"].toString();
           debugPrint("event--> ${callType}");
           if (callType == "1") {
             controller.joinVideoChannel(channelId: channelId);

@@ -50,20 +50,25 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCMSMhJUyOBZPYwWdres1nsoE-yXqO37Xg',
-    appId: '1:1031127517548:android:b94338a18f3867fa8f8b49',
+    // apiKey: 'AIzaSyCMSMhJUyOBZPYwWdres1nsoE-yXqO37Xg',
+    apiKey: 'AIzaSyBprm993Qos5TcJ4HXG5nBqAo-CgA8KgxQ',
+
+    // appId: '1:1031127517548:android:b94338a18f3867fa8f8b49',
+    appId: '1:395949993641:android:c94db712a6369155f243b8',
+
     messagingSenderId: '1031127517548',
-    projectId: 'agorademo-a1356',
-    storageBucket: 'agorademo-a1356.firebasestorage.app',
+    // projectId: 'agorademo-a1356',
+    projectId: 'gokidu-5e6b5',
+    // storageBucket: 'agorademo-a1356.firebasestorage.app',
+    storageBucket: 'gokidu-5e6b5.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyD5LSp6i6-9PnCwE83TlTiPvottO5rkaGI',
-    appId: '1:1031127517548:ios:c1644362b7d7d2ce8f8b49',
-    messagingSenderId: '1031127517548',
-    projectId: 'agorademo-a1356',
-    storageBucket: 'agorademo-a1356.firebasestorage.app',
-    iosBundleId: 'com.example.demoAgora',
+    apiKey: 'AIzaSyALrICrqS7zKtI__RJ21e9QrSo62AcyHhA',//---
+    appId: '1:395949993641:ios:30bb174597dc3c50f243b8',//---
+    messagingSenderId: '395949993641',///---
+    projectId: 'gokidu-5e6b5',//--
+    iosBundleId: 'com.app.gokidu',//---
   );
 
 }

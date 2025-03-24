@@ -38,9 +38,9 @@ class NotificationService {
     // Handle when the app is launched from a terminated state with a notification
     _messaging.getInitialMessage().then((RemoteMessage? message) {
       debugPrint("Notification received: ${message.toString()}");
-      if (message!.data['type'] == 'call') {
+      //if (message!.data['type'] == 'call') {
         // CallkitHelper().showIncomingCall(message.data);
-      }
+      //}
     });
 
     // Listen for messages when the app is in the foreground

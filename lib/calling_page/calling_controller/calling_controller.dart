@@ -1,5 +1,6 @@
 import 'package:agora_rtc_engine/agora_rtc_engine.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_callkit_incoming/entities/android_params.dart';
 import 'package:flutter_callkit_incoming/entities/call_kit_params.dart';
 import 'package:flutter_callkit_incoming/flutter_callkit_incoming.dart';
@@ -11,7 +12,7 @@ class CallingController extends GetxController {
 
   // Fill in the temporary token generated from Agora Console
   static const token =
-      "007eJxTYNgXZnj19auHWxQYzDSYpXc8eBLRNuNB2KTSmT5n+lm2nriqwGCemmSSZmyWbGBhmWiSYpyYaGpmbGpqmmoBFLQ0MUiewrY1vSGQkUGmbD0TIwMEgvgiDMkZiXl5qTnx6fnZmSml8UWJGaU5DAwA5pUmrQ==";
+      "007eJxTYPhXZHjqKWu7DrO0i93ffzzLlPWu7/O3X1NbPyHXZOO5/YcVGMxTk0zSjM2SDSwsE01SjBMTTc2MTU1NUy2AgpYmBsn3GG6lNwQyMvzXSGFiZIBAEF+EITkjMS8vNSc+PT87M6U0vigxozSHgQEAgqAmHg==";
 
   // server agora API that will token.
 
@@ -19,12 +20,24 @@ class CallingController extends GetxController {
   final channel =
       "channel_gokidu_rahul"; //---> from firebase -> doc/collection Id chat
 
+  static const platform = MethodChannel('com.gokidu/voipToken');
+  String _voipToken = '';
+
   @override
   void onInit() {
     debugPrint("onInit");
     getPermissions();
     init();
+    platform.setMethodCallHandler(_handleMethod);
     super.onInit();
+  }
+
+  // This method is called when the VoIP token is received from the native iOS code
+  Future<void> _handleMethod(MethodCall call) async {
+    if (call.method == "onVoIPTokenReceived") {
+      debugPrint("onVoIPTokenReceived: ${call.arguments}");
+      _voipToken = call.arguments;
+    }
   }
 
   var remoteUid = Rxn<int>(0);
@@ -32,6 +45,7 @@ class CallingController extends GetxController {
   var isVideoCall = false.obs;
   var isCameraEnable = true.obs;
   var isMicEnable = true.obs;
+  var isSoundEnable = true.obs;
   var remoteVideoState =
       Rxn<RemoteVideoState>(RemoteVideoState.remoteVideoStateStopped);
   var cameraDirection = CameraDirection.cameraFront.obs;
@@ -42,13 +56,19 @@ class CallingController extends GetxController {
     isMicEnable.value = !isMicEnable.value;
   }
 
+  updateSoundSpeaker() async {
+    await engine!.muteRemoteAudioStream(
+        uid: remoteUid.value!, mute: isSoundEnable.value);
+    isSoundEnable.value = !isSoundEnable.value;
+  }
+
   updateCamera() async {
     await engine!.enableLocalVideo(!isCameraEnable.value);
     isCameraEnable.value = !isCameraEnable.value;
   }
 
   changeCamera() async {
-debugPrint("changeCamera--> ");
+    debugPrint("changeCamera--> ");
     await engine!.switchCamera();
   }
 
@@ -115,10 +135,14 @@ debugPrint("changeCamera--> ");
     );
   }
 
+  // https://github.com/hiennguyen92/flutter_callkit_incoming/blob/master/example/lib/home_page.dart
   leaveChannel() async {
     await engine!.leaveChannel(options: LeaveChannelOptions());
     localUserJoined.value = false;
     remoteUid.value = null;
+    var calls = await FlutterCallkitIncoming.activeCalls();
+
+    await FlutterCallkitIncoming.endCall(calls[0]['id']);
   }
 
   registerEventHandlers() {
