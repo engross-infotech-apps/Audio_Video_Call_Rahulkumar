@@ -52,7 +52,7 @@ class DefaultFirebaseOptions {
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyBprm993Qos5TcJ4HXG5nBqAo-CgA8KgxQ',
     appId: '1:395949993641:android:c94db712a6369155f243b8',
-    messagingSenderId: '1031127517548',
+    messagingSenderId: '395949993641',
     projectId: 'gokidu-5e6b5',
     storageBucket: 'gokidu-5e6b5.appspot.com',
   );

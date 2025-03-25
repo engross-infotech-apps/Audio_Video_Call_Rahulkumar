@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_callkit_incoming/entities/android_params.dart';
 import 'package:flutter_callkit_incoming/entities/call_event.dart';
@@ -6,6 +5,8 @@ import 'package:flutter_callkit_incoming/entities/call_kit_params.dart';
 import 'package:flutter_callkit_incoming/entities/ios_params.dart';
 import 'package:flutter_callkit_incoming/flutter_callkit_incoming.dart';
 import 'package:get/get.dart';
+import 'package:gokidu_app_tour/view/calling_page/calling_page.dart';
+import 'package:gokidu_app_tour/view/chat/model/user.dart';
 import 'package:uuid/uuid.dart';
 
 import '../view/calling_page/calling_controller/calling_controller.dart';
@@ -45,18 +46,18 @@ class CallkitHelper {
       // 0 for audio, 1 for video
       extra: {"channel": data['channel_id'], "call_type": data['call_type']},
       avatar: data["avatar"],
-        // Incoming call/Outgoing call display time (second). If the time is over, the call will be missed.
+      // Incoming call/Outgoing call display time (second). If the time is over, the call will be missed.
       duration: 30000,
       android: const AndroidParams(
-        // Customize your Android full-screen notification here:
-        isCustomNotification: true,
-        ringtonePath: 'system_ringtone_default',
-        // backgroundColor: "#ffffff",
-        backgroundUrl: "assets/img/back_call.png"
+          // Customize your Android full-screen notification here:
+          isCustomNotification: true,
+          ringtonePath: 'system_ringtone_default',
+          // backgroundColor: "#ffffff",
+          backgroundUrl: "assets/img/back_call.png"
 
-        // More customization options as needed
+          // More customization options as needed
 
-      ),
+          ),
       ios: const IOSParams(
         iconName: 'CallKitLogo',
         handleType: 'generic',
@@ -94,12 +95,19 @@ class CallkitHelper {
         case Event.actionCallAccept:
           // Handle call acceptance
           debugPrint("event--> ${event.body}");
-          String channelId = event.body["extra"]["channel"]??event.body["handle"];
-          String callType = event.body["extra"]["call_type"]??event.body["type"].toString();
+          String channelId =
+              event.body["extra"]["channel"] ?? event.body["handle"];
+          String callType =
+              event.body["extra"]["call_type"] ?? event.body["type"].toString();
+          String userId = event.body["extra"]["userId"] ?? "";
           debugPrint("event--> ${callType}");
           if (callType == "1") {
+            Get.to(
+                CallingPage(isVideoCall: true, callToUser: User(id: userId)));
             controller.joinVideoChannel(channelId: channelId);
           } else if (callType == "0") {
+            Get.to(
+                CallingPage(isVideoCall: false, callToUser: User(id: userId)));
             controller.joinAudioChannel(channelId: channelId);
           }
 
@@ -112,6 +120,12 @@ class CallkitHelper {
 
           //   _handleCallDecline(event);
           break;
+
+        case Event.actionCallEnded:
+          Get.back();
+          controller.timer!.cancel();
+          break;
+
         default:
           break;
       }

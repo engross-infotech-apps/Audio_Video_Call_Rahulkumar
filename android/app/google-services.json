@@ -1,0 +1,130 @@
+{
+  "project_info": {
+    "project_number": "395949993641",
+    "project_id": "gokidu-5e6b5",
+    "storage_bucket": "gokidu-5e6b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395949993641:android:c94db712a6369155f243b8",
+        "android_client_info": {
+          "package_name": "com.app.gokidu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395949993641-270io4spslasdhvplbq6tl5jrgn7la51.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.gokidu",
+            "certificate_hash": "a480f91b47d40c7963e131cc86f92fb043c8ea9e"
+          }
+        },
+        {
+          "client_id": "395949993641-2j8p3657m1013bu731bnp82t29bhk2ve.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.gokidu",
+            "certificate_hash": "c15e629432627319bfa2e1b5ffa2e2e2ae99cd31"
+          }
+        },
+        {
+          "client_id": "395949993641-lfgdgp78vngefu0e88qnhtcsc9bbprlq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.gokidu",
+            "certificate_hash": "f0385ffecc00b8eea7aa595593b4f263a09ec674"
+          }
+        },
+        {
+          "client_id": "395949993641-mshbechbuua1iptro5t07sv2sei0eg33.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.gokidu",
+            "certificate_hash": "90e1ff14e4f7b44577523b5a084b91d1e851d1b7"
+          }
+        },
+        {
+          "client_id": "395949993641-qle392hakklg6pp4e9r627ihd30u9cod.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.gokidu",
+            "certificate_hash": "4dea1dacecc1c36dd31176f3a1098a1dc5b51205"
+          }
+        },
+        {
+          "client_id": "395949993641-b346clqqdb89tqq36griv354retjm4u0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBprm993Qos5TcJ4HXG5nBqAo-CgA8KgxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395949993641-b346clqqdb89tqq36griv354retjm4u0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "395949993641-td265np5jb2b6mbmvkond22rdj9cqaaj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.gokidu"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395949993641:android:a027bc3f9bf6a117f243b8",
+        "android_client_info": {
+          "package_name": "com.gokidu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395949993641-dis7emdm2qc6cro8l6n5l88j3cfstih9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gokidu",
+            "certificate_hash": "a480f91b47d40c7963e131cc86f92fb043c8ea9e"
+          }
+        },
+        {
+          "client_id": "395949993641-b346clqqdb89tqq36griv354retjm4u0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBprm993Qos5TcJ4HXG5nBqAo-CgA8KgxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395949993641-b346clqqdb89tqq36griv354retjm4u0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "395949993641-td265np5jb2b6mbmvkond22rdj9cqaaj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.gokidu"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -224,8 +224,11 @@ class _CallingPageState extends State<CallingPage> {
                                             ///
                                             setupIcons(
                                                 Icons.call_end, Colors.red, () {
-                                              controller.leaveChannel();
                                               controller.timer!.cancel();
+                                              controller.timer!=null;
+                                              controller.leaveChannel();
+
+                                              // controller.seconds=0.obs;
                                               Get.back();
                                             }),
 
@@ -289,8 +292,11 @@ class _CallingPageState extends State<CallingPage> {
                                             ///
                                             setupIcons(
                                                 Icons.call_end, Colors.red, () {
-                                              controller.leaveChannel();
                                               controller.timer!.cancel();
+                                              controller.timer!=null;
+                                              controller.leaveChannel();
+
+                                              // controller.seconds=0.obs;
                                               Get.back();
                                             }),
 

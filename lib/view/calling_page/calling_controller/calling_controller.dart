@@ -35,7 +35,7 @@ class CallingController extends GetxController {
     if (Platform.isIOS) {
       platform.setMethodCallHandler(_handleMethod);
     }
-    startTimer();
+    // startTimer();
     super.onInit();
   }
 
@@ -120,6 +120,7 @@ class CallingController extends GetxController {
   }
 
   joinVideoChannel({String? channelId}) async {
+    startTimer();
     debugPrint("joinVideoChannel ${channelId} ");
     isVideoCall.value = true;
     await engine!.enableLocalVideo(true);
@@ -146,6 +147,7 @@ class CallingController extends GetxController {
   }
 
   Future<void> joinAudioChannel({String? channelId}) async {
+    startTimer();
     isVideoCall.value = false;
     // await engine!.disableVideo();
     // await engine!.stopPreview();
