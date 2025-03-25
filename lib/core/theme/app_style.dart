@@ -32,6 +32,16 @@ LinearGradient boxGradient = LinearGradient(
   ],
 );
 
+LinearGradient callGradient = LinearGradient(
+  begin: Alignment(0.93, -0.37), // Approximate for 342.44 degrees
+  end: Alignment(-0.93, 0.37),
+  colors: [
+    AppColors.callG1,
+    AppColors.callG2,
+  ],
+  stops: [0.0539, 0.6071], // Converted from 5.39% and 60.71%
+);
+
 // final defaultPinTheme = PinTheme(
 //   width: 50,
 //   height: 56,

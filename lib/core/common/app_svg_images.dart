@@ -187,6 +187,14 @@ class AppSvgIcons {
 
   static String gridView = "assets/svgs/grid_view.svg";
   static String listView = "assets/svgs/list_view.svg";
+
+  static String videoCall = "assets/svgs/video_call.svg";
+  static String audioCall = "assets/svgs/call.svg";
+  static String recording = "assets/svgs/recording.svg";
+  static String recordingOff = "assets/svgs/recording_off.svg";
+
+
+
 }
 
 class Lotties {

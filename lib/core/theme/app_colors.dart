@@ -45,4 +45,9 @@ class AppColors {
   static Color paymentOrange = Color(0xFFFEF08A);
   static Color paymentOrangeLight = Color(0xFFFEFCE8);
   static Color stripeBlue = Color(0xFF5167FC);
+
+  static Color callG1 =  Color.fromRGBO(249, 156, 64, 0.9);
+  static Color callG2 = Color.fromRGBO(250, 99, 94, 0.9);
+  static Color iconBg = Color(0xFF222223);
+
 }

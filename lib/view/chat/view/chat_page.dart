@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:gokidu_app_tour/core/common/alert_dialog.dart';
 import 'package:gokidu_app_tour/core/common/app_svg_images.dart';
@@ -16,6 +17,8 @@ import 'package:gokidu_app_tour/view/chat/controller/chat_view_controller.dart';
 import 'package:gokidu_app_tour/view/chat/model/room.dart';
 import 'package:gokidu_app_tour/view/chat/model/user.dart';
 import 'package:gokidu_app_tour/widgets/custom_textfield.dart';
+
+import '../../calling_page/calling_page.dart';
 
 class ChatPage extends StatefulWidget {
   const ChatPage(
@@ -66,9 +69,9 @@ class _ChatPageState extends State<ChatPage>
         break;
       case 3:
         break;
-      // case 4:
-      //   cntrl.handleAudioSelection();
-      //   break;
+    // case 4:
+    //   cntrl.handleAudioSelection();
+    //   break;
       case 5:
         break;
       case 6:
@@ -100,72 +103,74 @@ class _ChatPageState extends State<ChatPage>
               children: [
                 Expanded(
                     child: CustomTextField(
-                  focusNode: f_node,
-                  controller: cntrl.messController,
-                  readOnly: !cntrl.isOpen.value,
-                  maxLine: 4,
-                  minLine: 1,
-                  hintText: 'Send a message',
-                  validator: (p0) => ValidationHelper.isChatValidate(p0!),
-                  inputType: TextInputType.multiline,
-                  ontap: () async {
-                    controller.reverse();
-                    cntrl.isOpen.value = true;
-                    setState(() {});
-                  },
-                  onChanged: (p0) {
-                    // ValidationHelper.isChatValidate(p0);
-                    controller.reverse();
-                    setState(() {});
-                    cntrl.isOpen.value = true;
-                  },
-                )),
+                      focusNode: f_node,
+                      controller: cntrl.messController,
+                      readOnly: !cntrl.isOpen.value,
+                      maxLine: 4,
+                      minLine: 1,
+                      hintText: 'Send a message',
+                      validator: (p0) => ValidationHelper.isChatValidate(p0!),
+                      inputType: TextInputType.multiline,
+                      ontap: () async {
+                        controller.reverse();
+                        cntrl.isOpen.value = true;
+                        setState(() {});
+                      },
+                      onChanged: (p0) {
+                        // ValidationHelper.isChatValidate(p0);
+                        controller.reverse();
+                        setState(() {});
+                        cntrl.isOpen.value = true;
+                      },
+                    )),
                 const SizedBox(width: 10),
-                cntrl.messController.text.trim().isEmpty
+                cntrl.messController.text
+                    .trim()
+                    .isEmpty
                     ? Row(
-                        children: [
-                          GestureDetector(
-                            onTap: () {
-                              cntrl.isOpen.value
-                                  ? FocusScope.of(context).unfocus()
-                                  : null;
-                              !cntrl.isOpen.value
-                                  ? controller.reverse()
-                                  : controller.forward();
-                              setState(() {});
-                              cntrl.isOpen.value = !cntrl.isOpen.value;
-                            },
-                            child: Container(
-                              padding: const EdgeInsets.all(13),
-                              decoration: BoxDecoration(
-                                color: AppColors.primaryRed,
-                                shape: BoxShape.circle,
-                              ),
-                              child: Transform.rotate(
-                                angle: !cntrl.isOpen.value ? 150 : 0,
-                                child: Custom.svgIconData(AppSvgIcons.plus),
-                              ),
-                            ),
-                          ),
-                        ],
-                      )
-                    : InkWell(
-                        onTap: () async {
-                          if (_formKey.currentState?.validate() ?? false) {}
-                          setState(() {});
-                        },
-                        child: Container(
-                          padding: const EdgeInsets.all(13),
-                          decoration: BoxDecoration(
-                            color: AppColors.primaryRed,
-                            shape: BoxShape.circle,
-                          ),
-                          child: Custom.svgIconData(
-                            AppSvgIcons.paperPlaneSend,
-                            color: Colors.white,
-                          ),
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        cntrl.isOpen.value
+                            ? FocusScope.of(context).unfocus()
+                            : null;
+                        !cntrl.isOpen.value
+                            ? controller.reverse()
+                            : controller.forward();
+                        setState(() {});
+                        cntrl.isOpen.value = !cntrl.isOpen.value;
+                      },
+                      child: Container(
+                        padding: const EdgeInsets.all(13),
+                        decoration: BoxDecoration(
+                          color: AppColors.primaryRed,
+                          shape: BoxShape.circle,
+                        ),
+                        child: Transform.rotate(
+                          angle: !cntrl.isOpen.value ? 150 : 0,
+                          child: Custom.svgIconData(AppSvgIcons.plus),
                         ),
                       ),
+                    ),
+                  ],
+                )
+                    : InkWell(
+                  onTap: () async {
+                    if (_formKey.currentState?.validate() ?? false) {}
+                    setState(() {});
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.all(13),
+                    decoration: BoxDecoration(
+                      color: AppColors.primaryRed,
+                      shape: BoxShape.circle,
+                    ),
+                    child: Custom.svgIconData(
+                      AppSvgIcons.paperPlaneSend,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
               ],
             ),
             SizeTransition(
@@ -174,13 +179,13 @@ class _ChatPageState extends State<ChatPage>
               child: Container(
                 padding: const EdgeInsets.only(top: 15),
                 decoration:
-                    BoxDecoration(borderRadius: BorderRadius.circular(20)),
+                BoxDecoration(borderRadius: BorderRadius.circular(20)),
                 child: Container(
                   // constraints: BoxConstraints(
                   //   maxHeight: MediaQuery.of(context).size.height * 0.40,
                   // ),
                   padding:
-                      const EdgeInsets.symmetric(vertical: 20, horizontal: 17),
+                  const EdgeInsets.symmetric(vertical: 20, horizontal: 17),
                   width: double.maxFinite,
                   decoration: BoxDecoration(
                       color: AppColors.lightPink,
@@ -192,45 +197,49 @@ class _ChatPageState extends State<ChatPage>
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 3,
                       // crossAxisSpacing: 20.00,
-                      childAspectRatio: ((MediaQuery.of(context).size.width -
-                                  (20 + 20 + 10)) /
-                              2) /
+                      childAspectRatio: ((MediaQuery
+                          .of(context)
+                          .size
+                          .width -
+                          (20 + 20 + 10)) /
+                          2) /
                           180,
                     ),
                     itemCount: cntrl.optionList.length,
-                    itemBuilder: (context, index) => GestureDetector(
-                      onTap: () {
-                        cntrl.selectedOption = cntrl.optionList[index].id;
-                        buttonClick();
-                        cntrl.isOpen.value = true;
-                      },
-                      child: Container(
-                        color: Colors.transparent,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Container(
-                              padding: const EdgeInsets.all(10),
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: AppColors.white),
-                              child: Custom.svgIconData(
-                                  cntrl.optionList[index].image!,
-                                  color: AppColors.primaryRed,
-                                  size: 25),
+                    itemBuilder: (context, index) =>
+                        GestureDetector(
+                          onTap: () {
+                            cntrl.selectedOption = cntrl.optionList[index].id;
+                            buttonClick();
+                            cntrl.isOpen.value = true;
+                          },
+                          child: Container(
+                            color: Colors.transparent,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Container(
+                                  padding: const EdgeInsets.all(10),
+                                  decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      color: AppColors.white),
+                                  child: Custom.svgIconData(
+                                      cntrl.optionList[index].image!,
+                                      color: AppColors.primaryRed,
+                                      size: 25),
+                                ),
+                                const SizedBox(height: 10),
+                                Expanded(
+                                  child: Text(
+                                    cntrl.optionList[index].name,
+                                    style: const TextStyle(fontSize: 12),
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                              ],
                             ),
-                            const SizedBox(height: 10),
-                            Expanded(
-                              child: Text(
-                                cntrl.optionList[index].name,
-                                style: const TextStyle(fontSize: 12),
-                                textAlign: TextAlign.center,
-                              ),
-                            ),
-                          ],
+                          ),
                         ),
-                      ),
-                    ),
                   ),
                 ),
               ),
@@ -302,23 +311,26 @@ class _ChatPageState extends State<ChatPage>
                   width: 50,
                   child: CachedNetworkImage(
                     imageUrl: (widget.otherUser?.profilePicture ??
-                        ""), //CustomText.imgEndPoint +
+                        ""),
+                    //CustomText.imgEndPoint +
                     errorListener: (value) {},
-                    imageBuilder: (context, imageProvider) => Container(
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Colors.white,
-                        image: DecorationImage(
-                          image: imageProvider,
-                          fit: BoxFit.cover,
+                    imageBuilder: (context, imageProvider) =>
+                        Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Colors.white,
+                            image: DecorationImage(
+                              image: imageProvider,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
                         ),
-                      ),
-                    ),
-                    placeholder: (context, url) => Container(
-                        height: 10,
-                        width: 10,
-                        alignment: Alignment.center,
-                        child: Custom.loader()),
+                    placeholder: (context, url) =>
+                        Container(
+                            height: 10,
+                            width: 10,
+                            alignment: Alignment.center,
+                            child: Custom.loader()),
                     errorWidget: (context, url, error) {
                       return Container(
                         decoration: BoxDecoration(
@@ -356,6 +368,37 @@ class _ChatPageState extends State<ChatPage>
                     style: AppFontStyle.heading4
                         .copyWith(fontWeight: FontWeight.w500)),
               ),
+
+              ///- Video Audio Call
+              GestureDetector(
+                onTap: (){
+                  Get.to(CallingPage(
+                      isVideoCall:true,
+                      callToUser: widget.otherUser
+                  ));
+                },
+                child: SvgPicture.asset(
+                  AppSvgIcons.videoCall,
+                  height: 30,
+                  width: 30,
+                ),
+              ),
+              const SizedBox(width: 10,),
+              GestureDetector(
+                onTap: (){
+                  Get.to(CallingPage(
+                      isVideoCall:false,
+                      callToUser: widget.otherUser
+                  ));
+                },
+                child: SvgPicture.asset(
+                  AppSvgIcons.audioCall,
+                  height: 30,
+                  width: 30,
+                ),
+              ),
+
+              ///- Video Audio Call
               Obx(() => chatAdditionalOptions()),
             ]),
           ),
@@ -386,26 +429,29 @@ class _ChatPageState extends State<ChatPage>
           icon: Icon(Icons.more_vert),
           onSelected: (value) async {
             f_node.unfocus();
-            if (value == 3) {
-            } else if (value == 2) {
+            if (value == 3) {} else if (value == 2) {
               var otherUserId = cntrl.otherUser!.id!;
               await showDialog(
                 context: context,
-                builder: (context) => AlertMsgDialog(
-                    title: 'Clear all chat?',
-                    msg:
-                        'Are you sure you want to clear all chat messages from "${cntrl.otherUser?.displayName ?? cntrl.otherUser?.fullName}"',
-                    imgColor: AppColors.redError,
-                    primaryText: "Yes, Clear",
-                    secondaryText: "No",
-                    primaryBtnTap: () async {},
-                    secondaryBtnTap: () {
-                      Navigator.pop(context);
-                    }),
+                builder: (context) =>
+                    AlertMsgDialog(
+                        title: 'Clear all chat?',
+                        msg:
+                        'Are you sure you want to clear all chat messages from "${cntrl
+                            .otherUser?.displayName ??
+                            cntrl.otherUser?.fullName}"',
+                        imgColor: AppColors.redError,
+                        primaryText: "Yes, Clear",
+                        secondaryText: "No",
+                        primaryBtnTap: () async {},
+                        secondaryBtnTap: () {
+                          Navigator.pop(context);
+                        }),
               );
             } else if (value == 1) {}
           },
-          itemBuilder: (context) => [
+          itemBuilder: (context) =>
+          [
             PopupMenuItem(
               value: 2,
               padding: EdgeInsets.symmetric(horizontal: 10),
@@ -431,7 +477,8 @@ class _ChatPageState extends State<ChatPage>
                       size: 25, color: AppColors.black),
                   hSpace(10),
                   Text(
-                    "Flag ${cntrl.otherUser?.displayName ?? cntrl.otherUser?.fullName}",
+                    "Flag ${cntrl.otherUser?.displayName ??
+                        cntrl.otherUser?.fullName}",
                     style: AppFontStyle.blackRegular16pt
                         .copyWith(fontWeight: FontWeight.w600),
                   )
@@ -449,11 +496,13 @@ class _ChatPageState extends State<ChatPage>
                   hSpace(10),
                   Text(
                     cntrl.roomData?.blockUser != null &&
-                            cntrl.roomData!.blockUser!.contains(otherUser)
-                        ? "Unblock ${cntrl.otherUser?.displayName ?? cntrl.otherUser?.fullName}"
-                            .trim()
-                        : "Block ${cntrl.otherUser?.displayName ?? cntrl.otherUser?.fullName}"
-                            .trim(),
+                        cntrl.roomData!.blockUser!.contains(otherUser)
+                        ? "Unblock ${cntrl.otherUser?.displayName ??
+                        cntrl.otherUser?.fullName}"
+                        .trim()
+                        : "Block ${cntrl.otherUser?.displayName ??
+                        cntrl.otherUser?.fullName}"
+                        .trim(),
                     style: AppFontStyle.blackRegular16pt.copyWith(
                         color: AppColors.redError, fontWeight: FontWeight.w600),
                   )
@@ -477,10 +526,10 @@ class _ChatPageState extends State<ChatPage>
           children: [
             Expanded(
                 child: ListView.builder(
-              itemCount: cntrl.tempChat.length,
-              reverse: true,
-              itemBuilder: (context, index) => cntrl.tempChat[index],
-            )),
+                  itemCount: cntrl.tempChat.length,
+                  reverse: true,
+                  itemBuilder: (context, index) => cntrl.tempChat[index],
+                )),
             bottomWidget()
           ],
         ),
