@@ -53,10 +53,10 @@ class CallkitHelper {
           isCustomNotification: true,
           ringtonePath: 'system_ringtone_default',
           // backgroundColor: "#ffffff",
-          backgroundUrl: "assets/img/back_call.png"
+          backgroundUrl: "assets/img/back_call.png",
+          isShowFullLockedScreen: true,
 
           // More customization options as needed
-
           ),
       ios: const IOSParams(
         iconName: 'CallKitLogo',
@@ -132,3 +132,6 @@ class CallkitHelper {
     });
   }
 }
+
+//full screen - call - locked device
+//android 14
